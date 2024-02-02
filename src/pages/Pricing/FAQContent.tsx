@@ -1,4 +1,4 @@
-import React from "react";
+
 import { StyledFAQContent } from "../../styles/Pricing/FAQContent.styled";
 import Accordion from "./Accordion";
 import { accordions } from "../../data/accordions";

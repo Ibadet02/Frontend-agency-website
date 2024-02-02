@@ -5,7 +5,7 @@ import ContentHeading from "./ContentHeading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
-const Task: React.FC<TaskProps> = ({ icon, contentHeadingProps }) => {
+const Task: React.FC<TaskProps> = ({ contentHeadingProps }) => {
   return (
     <StyledTask>
       <div className="icon-wrapper">

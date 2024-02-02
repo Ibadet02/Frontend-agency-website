@@ -1,4 +1,4 @@
-import React from "react";
+
 import { StyledFooterContent } from "../../styles/components/Footer/FooterContent.styled";
 import ContentHeading from "../ContentHeading";
 import MainDescription from "../MainDescription";

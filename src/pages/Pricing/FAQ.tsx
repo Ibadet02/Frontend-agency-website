@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { StyledFAQ } from '../../styles/Pricing/FAQ.styled';
 import FAQContent from './FAQContent';
 

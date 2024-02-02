@@ -1,4 +1,4 @@
-import React from "react";
+
 import { StyledNewsLetterInput } from "../styles/components/NewsLetterInput.styled";
 import MainButton from "./MainButton";
 import { MainButtonProps } from "./props";

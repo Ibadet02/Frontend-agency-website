@@ -1,4 +1,4 @@
-import React from "react";
+
 import { StyledControllers } from "../styles/components/Controllers.styles";
 
 const Controllers = () => {

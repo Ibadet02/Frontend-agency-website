@@ -1,4 +1,4 @@
-import React, { CSSProperties } from "react";
+
 
 const star = () => {
   return (
