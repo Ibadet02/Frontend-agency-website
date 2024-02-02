@@ -17,6 +17,12 @@ export interface TaskGroupProps {
 export interface AccordionProps {
   heading: string;
   description: string;
+  isAccordionActive?: (index: number) => string;
+  accordionIndex?: number;
+  handleAccordionState?: (
+    e: React.MouseEvent<HTMLElement>,
+    index: number
+  ) => void;
   id: number;
 }
 export interface FAQProps {
