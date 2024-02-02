@@ -1,8 +1,6 @@
 import React from "react";
 import { StyledAccordion } from "../../styles/Pricing/Accordion.styled";
 import { AccordionProps } from "./props";
-import { StyledHeading } from "../../styles/components/Heading.styled";
-import { StyledMainDescription } from "../../styles/components/MainDescription.styled";
 import { StyledAnswer } from "../../styles/Pricing/Answer.styled";
 import { StyledQuestion } from "./Question.styled";
 
