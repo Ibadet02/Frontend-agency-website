@@ -8,6 +8,7 @@ import WhatWeDo from "./pages/What-we-do";
 import OurServices from "./pages/OurServices";
 import OurProjects from "./pages/OurProjects";
 import Pricing from "./pages/Pricing";
+import HireUs from "./pages/HireUs";
 function App() {
   return (
     <ThemeProvider theme={{ data: "" }}>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/our-services" element={<OurServices />} />
         <Route path="/our-projects" element={<OurProjects />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/hire-us" element={<HireUs />} />
       </Routes>
       <Footer />
     </ThemeProvider>

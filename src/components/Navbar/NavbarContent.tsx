@@ -21,7 +21,7 @@ const NavbarContent = () => {
         <NavLink to={"/pricing"}>Pricing</NavLink>
         <NavLink to={"/blog"}>Blog</NavLink>
       </div>
-      <ActionLink title="Let's talk" path='/' />
+      <ActionLink title="Let's talk" path='/hire-us' />
     </StyledNavbarContent>
   );
 };

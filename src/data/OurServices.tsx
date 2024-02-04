@@ -40,7 +40,7 @@ export const ourServicesBanners: Record<string, BannerProps> = {
       actionLinkProps: {
         styles: css``,
         title: "Let's Get Started",
-        path: "/",
+        path: "/hire-us",
         icon: "",
       },
     },

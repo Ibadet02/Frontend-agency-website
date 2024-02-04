@@ -56,7 +56,7 @@ export const homeBanners: Record<string, BannerProps> = {
           border-radius: 1.5rem;
         `,
         title: "Let's Get Started",
-        path: "/",
+        path: "/hire-us",
         icon: <FontAwesomeIcon icon={faCircleRight} />,
       },
     },
@@ -154,7 +154,7 @@ export const homeBanners: Record<string, BannerProps> = {
           }
         `,
         title: "Let's Get Started",
-        path: "/",
+        path: "/hire-us",
         icon: <FontAwesomeIcon icon={faCircleRight} />,
       },
     },
@@ -567,7 +567,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
           }
         `,
         title: "Know more",
-        path: "",
+        path: "/hire-us",
         icon: <FontAwesomeIcon icon={faCircleRight} />,
       },
     },
@@ -682,7 +682,7 @@ export const portfolio: PortfolioProps = {
     actionLinkProps: {
       styles: css``,
       title: "Explore all projects",
-      path: "/",
+      path: "/hire-us",
       icon: "",
     },
   },

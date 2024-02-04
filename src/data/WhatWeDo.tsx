@@ -46,7 +46,7 @@ export const whatWeDoBanners: Record<string, BannerProps> = {
       actionLinkProps: {
         styles: css``,
         title: "Let's Get Started",
-        path: "/",
+        path: "/hire-us",
         icon: <FontAwesomeIcon icon={faCircleRight} />,
       },
     },
@@ -467,7 +467,7 @@ export const whatWeDoDesignInfoWrappers: Record<string, DesignInfoWrapperProps> 
       },
       actionLinkProps: {
         title: "Know more",
-        path: "",
+        path: "/hire-us",
         icon: "",
         styles: css``,
       },

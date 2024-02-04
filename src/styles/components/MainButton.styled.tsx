@@ -13,6 +13,7 @@ export const StyledMainButton = styled.button<{ $styles?: RuleSet<object> }>`
   cursor: pointer;
   transition: 0.3s;
   color: #fff;
+  font-size: 1.3rem;
   &:hover {
     background-color: #fff;
     color: #3C71FF;

@@ -5,4 +5,5 @@ export const StyledNavbar = styled.nav`
     height: 3.5rem;
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 `
