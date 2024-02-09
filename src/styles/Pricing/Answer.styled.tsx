@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { Theme } from "../../theme";
 
-export const StyledAnswer = styled.p`
-  color: #97989c;
+export const StyledAnswer = styled.p<{ theme: Theme }>`
+  color: ${({ theme }) => theme.colors().answer()};
   font-size: 0.95rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 200ms ease-out;
+  transition: ${({ theme }) => theme.transitions.changeMode};
   display: flex;
   flex-direction: column;
   align-items: center;

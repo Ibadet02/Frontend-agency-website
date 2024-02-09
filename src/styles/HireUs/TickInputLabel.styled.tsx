@@ -1,10 +1,7 @@
 import styled from "styled-components";
+import { Theme } from "../../theme";
 
-// interface StyledTickInputProps {
-//   type: "checkbox" | "radio";
-// }
-
-export const StyledTickInputLabel = styled.label`
+export const StyledTickInputLabel = styled.label<{ theme: Theme }>`
   position: relative;
   display: inline-flex;
   input {
@@ -16,11 +13,11 @@ export const StyledTickInputLabel = styled.label`
     color: #fff;
 
     &::before {
-      background: #3C71FF;
+      background-color: ${({ theme }) => theme.colors().mainBlue};
     }
   }
   span {
-    color: #3C71FF;
+    color: ${({ theme }) => theme.colors().mainBlue};
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -31,21 +28,23 @@ export const StyledTickInputLabel = styled.label`
     width: -moz-max-content;
     width: max-content;
     font-size: 1.3rem;
-    /* line-height: 20px; */
     font-weight: 500;
-    /* line-height: 40px; */
     text-align: center;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     z-index: 1;
     transition-property: color;
     transition-duration: 0.4s;
     transition-timing-function: ease;
+    &:hover {
+      &::before {
+        background: rgba(78, 90, 107, 0.5);
+      }
+    }
     &::before {
       content: "";
-      background: rgba(78, 90, 107, 0.5);
-      background: #1F2934;
+      background: #1f2934;
       transition-property: background;
-      transition-duration: 0.4s;
+      transition-duration: 0.2s;
       transition-timing-function: ease;
       border-radius: 100px;
       position: absolute;

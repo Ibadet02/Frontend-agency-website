@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { Theme } from "../../theme";
 
-export const StyledAccordion = styled.div`
+export const StyledAccordion = styled.div<{theme: Theme}>`
   width: 80%;
-  border: .1rem solid #fff;
+  border: .1rem solid ${({ theme }) => theme.colors().creamGray};
   border-radius: .4rem;
   padding: 1rem;
 `;

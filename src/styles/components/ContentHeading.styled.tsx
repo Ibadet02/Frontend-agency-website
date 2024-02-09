@@ -1,14 +1,17 @@
 import styled, { RuleSet } from "styled-components";
+import { Theme } from "../../theme";
 
 export const StyledContentHeading = styled.div<{
   $mutualStyles?: RuleSet<object>;
+  theme: Theme;
 }>`
   ${(props) => props.$mutualStyles};
   .content-heading {
     position: relative;
     display: inline;
     text-decoration: none;
-    color: #fff;
+    color: ${({ theme }) => theme.colors().contentHeading};
+    transition: ${({ theme }) => theme.transitions.changeMode};
     font-weight: 600;
     .dot {
       position: absolute;

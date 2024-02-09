@@ -50,6 +50,7 @@ const HireUsForm: React.FC<HireUsFormProps> = (props) => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    // sendEmail(formData);
     console.log(formData);
     // Add your form submission logic here
   };

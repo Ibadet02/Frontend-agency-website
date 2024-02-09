@@ -1,8 +1,8 @@
-import { StyledNavbarContent } from "../../styles/components/Navbar/NavbarContent.styled";
+import { StyledNavbarContent } from "../../../styles/components/Navbar/DesktopNavbar/NavbarContent.styled";
 import { Link, NavLink } from "react-router-dom";
-import ContentHeading from "../ContentHeading";
+import ContentHeading from "../../ContentHeading";
 import { css } from "styled-components";
-import ActionLink from "../ActionLink";
+import ActionLink from "../../ActionLink";
 const contentHeadingStyles = css`
   font-size: 1.5rem;
   width: auto;

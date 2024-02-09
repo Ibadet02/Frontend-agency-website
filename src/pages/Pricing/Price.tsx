@@ -14,9 +14,10 @@ const Price: React.FC<PriceProps> = ({
   descriptionProps,
   taskGroupProps,
   actionLinkProps,
+  id,
 }) => {
   return (
-    <StyledPrice>
+    <StyledPrice className={`${id === 1 && 'active'}`}>
       <SmallHeading {...smallHeadingProps} />
       <div className="price-duration--info">
         <Heading {...price} />

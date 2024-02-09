@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Theme } from "../../../theme";
 
-export const StyledFooterContent = styled.div`
+export const StyledFooterContent = styled.div<{ theme: Theme }>`
   width: 75rem;
   display: flex;
   flex-direction: column;
@@ -39,17 +40,22 @@ export const StyledFooterContent = styled.div`
           gap: 0.5rem;
           &.about {
             grid-template-columns: repeat(2, 1fr);
+            a {
+              padding-right: 1rem;
+            }
           }
           a {
             text-decoration: none;
-            color: #bec5cf;
+            color: ${({ theme }) => theme.colors().mainLink()};
+            transition: color ${({ theme }) => theme.transitions.changeMode};
             span {
               display: block;
-              transition: 200ms;
+              transition: transform
+                ${({ theme }) => theme.transitions.changeMode};
               pointer-events: none;
             }
             &:hover {
-              color: #fff;
+              color: ${({ theme }) => theme.colors().mainLinkHover()};
               span {
                 transform: translateX(1rem);
               }
@@ -67,10 +73,12 @@ export const StyledFooterContent = styled.div`
         flex-direction: column;
         gap: 0.55rem;
         input {
+          transition: ${({ theme }) => theme.transitions.changeMode};
           padding: 0.8rem 0.1rem 0.8rem 0.2rem;
           outline: none;
-          border: none;
-          border-radius: 0.2rem;
+          border: ${({ theme }) =>
+            ".1rem solid " + theme.colors().mainBorder()};
+          border-radius: 0.4rem;
         }
       }
     }
