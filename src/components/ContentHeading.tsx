@@ -2,6 +2,7 @@ import React from "react";
 import { StyledContentHeading } from "../styles/components/ContentHeading.styled";
 import { ContentHeadingProps } from "./props";
 import { LinkProps } from "react-router-dom";
+import Reveal from "./Animation/Reveal";
 
 const ContentHeading: React.FC<ContentHeadingProps> = ({
   tagName,
@@ -32,9 +33,11 @@ const ContentHeading: React.FC<ContentHeadingProps> = ({
     );
   };
   return (
-    <StyledContentHeading $mutualStyles={styles}>
-      {renderComponent()}
-    </StyledContentHeading>
+    <Reveal withSlide>
+      <StyledContentHeading $mutualStyles={styles}>
+        {renderComponent()}
+      </StyledContentHeading>
+    </Reveal>
   );
 };
 

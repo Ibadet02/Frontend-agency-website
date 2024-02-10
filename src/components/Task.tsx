@@ -9,7 +9,7 @@ const Task: React.FC<TaskProps> = ({ contentHeadingProps }) => {
   return (
     <StyledTask>
       <div className="icon-wrapper">
-        <FontAwesomeIcon icon={faCheck} style={{ color: "#3B6DF4" }} />
+        <FontAwesomeIcon icon={faCheck} />
       </div>
       <ContentHeading {...contentHeadingProps} />
     </StyledTask>

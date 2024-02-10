@@ -4,6 +4,7 @@ import { StyledInfoImage } from "../styles/components/InfoImage.styled";
 import SmallHeading from "./SmallHeading";
 import MainDescription from "./MainDescription";
 import Heading from "./Heading";
+import Reveal from "./Animation/Reveal";
 
 const InfoImage: React.FC<InfoImageProps> = ({
   img,
@@ -13,13 +14,15 @@ const InfoImage: React.FC<InfoImageProps> = ({
   styles,
 }) => {
   return (
-    <StyledInfoImage $styles={styles}>
-      {img && <img src={img.src} alt={img.alt} />}
-      {smallHeadingProps && <SmallHeading {...smallHeadingProps} />}
-      {}
-      {headingProps && <Heading {...headingProps} />}
-      {descriptionProps && <MainDescription {...descriptionProps} />}
-    </StyledInfoImage>
+    <Reveal>
+      <StyledInfoImage $styles={styles}>
+        {img && <img src={img.src} alt={img.alt} />}
+        {smallHeadingProps && <SmallHeading {...smallHeadingProps} />}
+        {}
+        {headingProps && <Heading {...headingProps} />}
+        {descriptionProps && <MainDescription {...descriptionProps} />}
+      </StyledInfoImage>
+    </Reveal>
   );
 };
 

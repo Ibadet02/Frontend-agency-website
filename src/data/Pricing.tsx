@@ -30,6 +30,9 @@ export const pricingDesignInfoWrappers: Record<string, DesignInfoWrapperProps> =
       designInfoProps: {
         styles: css`
           text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         `,
         smallHeadingProps: {
           text: "Quick answers",

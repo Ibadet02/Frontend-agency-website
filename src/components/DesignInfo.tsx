@@ -7,6 +7,7 @@ import MainDescription from "./MainDescription";
 import ActionLink from "./ActionLink";
 import NumberedOrder from "./NumberedOrder";
 import NewsLetterInput from "./NewsLetterInput";
+import Reveal from "./Animation/Reveal";
 
 const DesignInfo: React.FC<DesignInfoProps> = ({
   numberedOrderProps,
@@ -21,7 +22,11 @@ const DesignInfo: React.FC<DesignInfoProps> = ({
   return (
     <StyledDesignInfo $styles={styles}>
       {numberedOrderProps && <NumberedOrder {...numberedOrderProps} />}
-      {img && <img src={img.src} alt={img.alt} className="design-img" />}
+      {img && (
+        <Reveal>
+          <img src={img.src} alt={img.alt} className="design-img" />
+        </Reveal>
+      )}
       {smallHeadingProps && <SmallHeading {...smallHeadingProps} />}
       <ContentHeading {...contentHeadingProps} />
       {descriptionProps && <MainDescription {...descriptionProps} />}

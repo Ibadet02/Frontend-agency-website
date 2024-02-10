@@ -11,7 +11,7 @@ export const StyledPrice = styled.div<{theme: Theme}>`
   background-color: ${({ theme }) => theme.colors().priceBG()};
   padding: 2rem;
   border-radius: 4rem;
-  &.active {
+  &.popular {
     background-color: ${({ theme }) => theme.colors().mainBlue};
     a {
       background-color: ${({ theme }) => theme.colors().white};
@@ -21,5 +21,6 @@ export const StyledPrice = styled.div<{theme: Theme}>`
   .price-duration--info {
     display: flex;
     align-items: center;
+    color: #fff;
   }
 `;

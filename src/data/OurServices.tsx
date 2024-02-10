@@ -172,14 +172,20 @@ export const ourServicesBanners: Record<string, BannerProps> = {
   },
 };
 
-export const ourServicesDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
+export const ourServicesDesignInfoWrappers: Record<
+  string,
+  DesignInfoWrapperProps
+> = {
   first: {
     designInfoGroupProps: {
       designInfosProps: [
         {
           styles: css`
+            flex: 1;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            text-align: center;
             gap: 0.5rem;
           `,
           smallHeadingProps: {
@@ -200,8 +206,12 @@ export const ourServicesDesignInfoWrappers: Record<string, DesignInfoWrapperProp
         },
         {
           styles: css`
+            flex: 1;
+
             display: flex;
             flex-direction: column;
+            align-items: center;
+            text-align: center;
             gap: 0.5rem;
           `,
           smallHeadingProps: {
@@ -222,8 +232,12 @@ export const ourServicesDesignInfoWrappers: Record<string, DesignInfoWrapperProp
         },
         {
           styles: css`
+            flex: 1;
+
             display: flex;
             flex-direction: column;
+            align-items: center;
+            text-align: center;
             gap: 0.5rem;
           `,
           smallHeadingProps: {
@@ -243,7 +257,15 @@ export const ourServicesDesignInfoWrappers: Record<string, DesignInfoWrapperProp
           id: 2,
         },
         {
-          styles: css``,
+          styles: css`
+            flex: 1;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 0.5rem;
+          `,
           smallHeadingProps: {
             text: "Campaigns",
           },
@@ -264,6 +286,8 @@ export const ourServicesDesignInfoWrappers: Record<string, DesignInfoWrapperProp
       styles: css`
         display: flex;
         gap: 1rem;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
         @media screen and (max-width: 820px) {
           flex-wrap: wrap;
         }

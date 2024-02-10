@@ -321,6 +321,7 @@ export const whatWeDoDesignInfoWrappers: Record<string, DesignInfoWrapperProps> 
         text-align: center;
         display: flex;
         flex-direction: column;
+        align-items: center;
       `,
       smallHeadingProps: {
         text: "What we do",
@@ -339,7 +340,7 @@ export const whatWeDoDesignInfoWrappers: Record<string, DesignInfoWrapperProps> 
     styles: css`
       display: flex;
       justify-content: space-between;
-      gap: 1rem;
+      gap: 2rem;
       align-items: center;
     `,
     designInfoGroupProps: {
@@ -457,7 +458,6 @@ export const whatWeDoDesignInfoWrappers: Record<string, DesignInfoWrapperProps> 
         to: "/",
         children: "Experienced, Creative, and Helpful",
         styles: css`
-          width: 17rem;
           font-size: 2rem;
         `,
       },

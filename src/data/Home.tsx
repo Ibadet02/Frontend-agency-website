@@ -234,6 +234,9 @@ export const homeBanners: Record<string, BannerProps> = {
     designInfoProps: {
       styles: css`
         width: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       `,
       img: {
         src: ourTeam,
@@ -583,6 +586,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
           styles: css`
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 0.6rem;
             flex: 1;
           `,
@@ -605,6 +609,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
           styles: css`
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 0.6rem;
             flex: 1;
           `,
@@ -627,6 +632,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
           styles: css`
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 0.6rem;
             flex: 1;
           `,
