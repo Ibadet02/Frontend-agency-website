@@ -48,7 +48,7 @@ const Reveal: React.FC<RevealProps> = ({
           }}
           initial="hidden"
           animate={slideControls}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.35, ease: "easeIn" }}
           style={{
             position: "absolute",
             top: 4,
