@@ -6,4 +6,7 @@ export const StyledFAQContent = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  max-height: 30rem;
+  overflow-y: auto;
+  padding: 1rem;
 `;

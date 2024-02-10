@@ -13,7 +13,7 @@ import OurProjects from "./pages/OurProjects";
 import Pricing from "./pages/Pricing";
 import HireUs from "./pages/HireUs";
 import Blog from "./pages/Blog.tsx";
-import ProgressBar from "./components/ProgressBar.tsx";
+// import ProgressBar from "./components/ProgressBar.tsx";
 // import { useState } from "react";
 // import LoadingBar from "react-top-loading-bar";
 // import { useTheme } from "./context/ThemeContext.tsx";
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <GlobalStyle theme={theme} />
-      <ProgressBar />
+      {/* <ProgressBar /> */}
       {/* <LoadingBar
         color="#f11946"
         progress={progress}

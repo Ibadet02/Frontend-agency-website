@@ -9,5 +9,4 @@ export const StyledAnswer = styled.p<{ theme: Theme }>`
   transition: ${({ theme }) => theme.transitions.changeMode};
   display: flex;
   flex-direction: column;
-  align-items: center;
 `;
