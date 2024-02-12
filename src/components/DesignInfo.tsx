@@ -4,7 +4,7 @@ import { StyledDesignInfo } from "../styles/components/DesignInfo.styled";
 import SmallHeading from "./SmallHeading";
 import ContentHeading from "./ContentHeading";
 import MainDescription from "./MainDescription";
-import ActionLink from "./ActionLink";
+// import ActionLink from "./ActionLink";
 import NumberedOrder from "./NumberedOrder";
 import NewsLetterInput from "./NewsLetterInput";
 import Reveal from "./Animation/Reveal";
