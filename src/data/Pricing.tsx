@@ -21,7 +21,7 @@ export const pricingDesignInfoWrappers: Record<string, DesignInfoWrapperProps> =
           `,
         },
         descriptionProps: {
-          text: "we can help you to build your dream website and app.",
+          text: "Please note that the prices can change every 6 months.",
           styles: css``,
         },
       },

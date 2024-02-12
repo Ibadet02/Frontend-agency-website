@@ -8,6 +8,7 @@ import ActionLink from "./ActionLink";
 import NumberedOrder from "./NumberedOrder";
 import NewsLetterInput from "./NewsLetterInput";
 import Reveal from "./Animation/Reveal";
+import LetsTalkButton from "./Buttons/LetsTalkButton";
 
 const DesignInfo: React.FC<DesignInfoProps> = ({
   numberedOrderProps,
@@ -31,7 +32,7 @@ const DesignInfo: React.FC<DesignInfoProps> = ({
       <ContentHeading {...contentHeadingProps} />
       {descriptionProps && <MainDescription {...descriptionProps} />}
       {doesInputExist && <NewsLetterInput />}
-      {actionLinkProps && <ActionLink {...actionLinkProps} />}
+      {actionLinkProps && <LetsTalkButton {...actionLinkProps} />}
     </StyledDesignInfo>
   );
 };

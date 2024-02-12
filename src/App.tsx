@@ -8,7 +8,7 @@ import { GlobalStyle } from "./styles/globalStyle";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import WhatWeDo from "./pages/What-we-do";
-import OurServices from "./pages/OurServices";
+import Services from "./pages/Services/index.tsx";
 import OurProjects from "./pages/OurProjects";
 import Pricing from "./pages/Pricing";
 import HireUs from "./pages/HireUs";
@@ -33,7 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
-        <Route path="/our-services" element={<OurServices />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/our-projects" element={<OurProjects />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />

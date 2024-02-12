@@ -1,11 +1,14 @@
 import styled, { RuleSet } from "styled-components";
+import { Theme } from "../../theme";
 
-export const StyledFeedbacksContent = styled.div<{ $styles?: RuleSet<object> }>`
-  width: 75rem;
+export const StyledFeedbacksContent = styled.div<{
+  $styles?: RuleSet<object>;
+  theme: Theme;
+}>`
+  ${({ theme }) => theme.contentStyles};
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding-inline: 1rem;
   @media screen and (max-width: 820px) {
     flex-direction: column;
     align-items: flex-start;

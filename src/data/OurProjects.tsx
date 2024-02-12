@@ -276,6 +276,17 @@ export const ourProjectsPortfolio: Record<string, PortfolioProps> = {
         text-align: center;
         flex-basis: 50%;
         text-align: left;
+        padding-right: 2rem;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 680px) {
+          flex: 1;
+          align-items: center;
+          padding-right: 0;
+          & > div {
+            text-align: center;
+          }
+        }
       `,
       contentHeadingProps: {
         styles: css`
@@ -292,6 +303,9 @@ export const ourProjectsPortfolio: Record<string, PortfolioProps> = {
     infoImageGroupProps: {
       styles: css`
         flex: 1;
+        @media screen and (max-width: 680px) {
+          display: none;
+        }
         img {
           width: 100%;
           border-radius: 1rem;
@@ -320,6 +334,17 @@ export const ourProjectsPortfolio: Record<string, PortfolioProps> = {
         text-align: center;
         flex-basis: 50%;
         text-align: left;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 680px) {
+          flex: 1;
+          align-items: center;
+          padding-left: 0;
+          & > div {
+            text-align: center;
+          }
+        }
       `,
       contentHeadingProps: {
         styles: css`
@@ -336,6 +361,9 @@ export const ourProjectsPortfolio: Record<string, PortfolioProps> = {
     infoImageGroupProps: {
       styles: css`
         flex: 1;
+        @media screen and (max-width: 680px) {
+          display: none;
+        }
         img {
           width: 100%;
           border-radius: 1rem;

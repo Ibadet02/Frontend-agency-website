@@ -5,9 +5,9 @@ import Reveal from "./Animation/Reveal";
 
 const MainDescription: React.FC<MainDescriptionProps> = ({ text, styles }) => {
   return (
-    <Reveal withSlide>
-      <StyledMainDescription $styles={styles}>{text}</StyledMainDescription>
-    </Reveal>
+    <StyledMainDescription $styles={styles}>
+      <Reveal withSlide>{text}</Reveal>
+    </StyledMainDescription>
   );
 };
 

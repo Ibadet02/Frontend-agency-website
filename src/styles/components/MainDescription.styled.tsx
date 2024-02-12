@@ -5,8 +5,10 @@ export const StyledMainDescription = styled.p<{
   $styles?: RuleSet<object>;
   theme: Theme;
 }>`
+  @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+  font-family: "Kanit", sans-serif;
   color: ${({ theme }) => theme.colors().mainDescription()};
   transition: color ${({ theme }) => theme.transitions.changeMode};
-  font-size: 0.85rem;
+  font-size: .85rem;
   ${({ $styles }) => $styles};
 `;

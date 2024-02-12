@@ -1,13 +1,9 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { StyledTopBar } from "../../../styles/components/Navbar/MobileNavbar/TopBar.styled";
-import ContentHeading from "../../ContentHeading";
-import { css } from "styled-components";
 import ActionLink from "../../ActionLink";
 import { TopBarProps } from "./props";
-const contentHeadingStyles = css`
-  font-size: 1.5rem;
-  width: auto;
-`;
+import Logo from "../../Logo";
+import LetsTalkButton from "../../Buttons/LetsTalkButton";
 const TopBar: React.FC<TopBarProps> = ({
   setIsBottomBarOpen,
   isBottomBarOpen,
@@ -15,12 +11,12 @@ const TopBar: React.FC<TopBarProps> = ({
   return (
     <StyledTopBar>
       <div className="top-bar__left">
-        <ContentHeading tagName={Link} to="/" styles={contentHeadingStyles}>
-          HexLab
-        </ContentHeading>
+        <NavLink to={"/"} onClick={() => setIsBottomBarOpen(false)}>
+          <Logo />
+        </NavLink>
       </div>
       <div className="top-bar__right">
-        <ActionLink title="Let's talk" path="/hire-us" />
+        <LetsTalkButton title="Let's talk" path="/hire-us" />
         <div
           className={`menu-bars ${isBottomBarOpen && "active"}`}
           onClick={() => setIsBottomBarOpen((prev) => !prev)}

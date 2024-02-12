@@ -144,21 +144,38 @@ export const homeBanners: Record<string, BannerProps> = {
         text: "This is a description",
       },
       actionLinkProps: {
-        styles: css`
-          width: fit-content;
-          color: #3c71ff;
-          background-color: #fff;
-          &:hover {
-            background-color: #3c71ff;
-            color: #fff;
-          }
-        `,
         title: "Let's Get Started",
         path: "/hire-us",
-        icon: <FontAwesomeIcon icon={faCircleRight} />,
       },
     },
     imageDemonstratorProps: {
+      styles: css`
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(
+          2,
+          1fr
+        ); /* Two columns with equal width */
+        grid-template-rows: repeat(
+          2,
+          auto
+        ); /* Two rows with automatic height */
+        gap: 1rem;
+        @media screen and (max-width: 540px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          figure {
+            width: 100%;
+            padding-inline: 3rem;
+            .image {
+              border-radius: 40%;
+              aspect-ratio: 4/5.5;
+            }
+          }
+        }
+      `,
       imagesProps: [
         {
           src: frontEndDev,
@@ -196,32 +213,6 @@ export const homeBanners: Record<string, BannerProps> = {
           `,
         },
       ],
-      styles: css`
-        flex: 1;
-        display: grid;
-        grid-template-columns: repeat(
-          2,
-          1fr
-        ); /* Two columns with equal width */
-        grid-template-rows: repeat(
-          2,
-          auto
-        ); /* Two rows with automatic height */
-        gap: 1rem;
-        @media screen and (max-width: 540px) {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          figure {
-            width: auto;
-            padding-inline: 3rem;
-            .image {
-              border-radius: 40%;
-              aspect-ratio: 4/5.5;
-            }
-          }
-        }
-      `,
     },
   },
   third: {
@@ -561,17 +552,8 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
         styles: css``,
       },
       actionLinkProps: {
-        styles: css`
-          color: #3c71ff;
-          background-color: #fff;
-          &:hover {
-            background-color: #3c71ff;
-            color: #fff;
-          }
-        `,
         title: "Know more",
         path: "/hire-us",
-        icon: <FontAwesomeIcon icon={faCircleRight} />,
       },
     },
     designInfoGroupProps: {
@@ -580,16 +562,22 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
         justify-content: space-between;
         text-align: center;
         gap: 1rem;
+        flex-wrap: wrap;
+        & > div {
+          min-width: 13rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.6rem;
+          flex: 1;
+          @media screen and (max-width: 400px) {
+            min-width: 100%;
+          }
+        }
       `,
       designInfosProps: [
         {
-          styles: css`
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.6rem;
-            flex: 1;
-          `,
+          styles: css``,
           id: 0,
           numberedOrderProps: {
             numberContent: "01",
@@ -606,13 +594,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
           },
         },
         {
-          styles: css`
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.6rem;
-            flex: 1;
-          `,
+          styles: css``,
           id: 1,
           numberedOrderProps: {
             numberContent: "02",
@@ -629,13 +611,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
           },
         },
         {
-          styles: css`
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.6rem;
-            flex: 1;
-          `,
+          styles: css``,
           id: 2,
           numberedOrderProps: {
             numberContent: "03",
@@ -703,6 +679,9 @@ export const portfolio: PortfolioProps = {
       }
       @media screen and (max-width: 600px) {
         grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (max-width: 500px) {
+        grid-template-columns: 1fr;
       }
     `,
     infoImagesProps: [

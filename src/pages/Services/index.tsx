@@ -1,25 +1,25 @@
-import { StyledOurServices } from "../../styles/OurServices/index.styled";
-import { ourServicesBanners } from "../../data/OurServices";
+import { StyledServices } from "../../styles/Services/index.styled";
+import { servicesBanners } from "../../data/Services";
 import Banner from "../../components/Banner";
 import DesignInfoWrapper from "../../components/DesignInfoWrapper";
-import { ourServicesDesignInfoWrappers } from "../../data/OurServices";
+import { servicesDesignInfoWrappers } from "../../data/Services";
 import { whatWeDoDesignInfoWrappers } from "../../data/WhatWeDo";
 import Feedbacks from "../../components/Feedbacks";
 import { feedbacks as feedbacksProps } from "../../data/components/Feedbacks";
 
-const { first: firstDesignInfoWrapperProps } = ourServicesDesignInfoWrappers;
+const { first: firstDesignInfoWrapperProps } = servicesDesignInfoWrappers;
 
-const { first: firstBannerProps } = ourServicesBanners;
+const { first: firstBannerProps } = servicesBanners;
 const { second: secondDesignInfoWrappers } = whatWeDoDesignInfoWrappers;
-const OurServices = () => {
+const Services = () => {
   return (
-    <StyledOurServices>
+    <StyledServices>
       <Banner {...firstBannerProps} />
       <DesignInfoWrapper {...firstDesignInfoWrapperProps} />
       <DesignInfoWrapper {...secondDesignInfoWrappers} />
       <Feedbacks {...feedbacksProps} />
-    </StyledOurServices>
+    </StyledServices>
   );
 };
 
-export default OurServices;
+export default Services;

@@ -1,9 +1,9 @@
 import { css } from "styled-components";
-import MainButton from "../../components/MainButton";
 import { StyledHireUsFormContent } from "../../styles/HireUs/HireUsFormContent.styled";
 import InputFamily from "./InputFamily";
 import TextInputLabel from "./TextInputLabel";
 import { HireUsFormContentProps } from "./props";
+import MainButton from "../../components/Buttons/MainButton";
 const submitButtonStyles = css`
   width: min-content;
   padding: 0.7rem 1.4rem;

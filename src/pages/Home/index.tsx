@@ -27,7 +27,7 @@ const Home = () => {
       <DesignInfoWrapper {...firstDesignInfoWrapperProps} />
       <Banner {...secondBannerProps} />
       <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
-      <Portfolio {...portfolioProps} />
+      {/* <Portfolio {...portfolioProps} /> */}
       <Banner {...thirdBannerProps} />
       <Feedbacks {...feedbacksProps} />
     </StyledHome>

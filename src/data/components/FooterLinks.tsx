@@ -57,7 +57,7 @@ export const footerLinks = [
     id: 1,
     contentHeadingProps: {
       tagName: "h3",
-      children: "Use case",
+      children: "Social Media",
       styles: css`
         font-size: 1.9rem;
       `,
@@ -65,23 +65,23 @@ export const footerLinks = [
     links: [
       {
         id: 0,
-        title: "Marketing",
-        href: "/",
+        title: "YouTube",
+        href: "https://www.youtube.com/channel/UCc-5UolRjxVenYNk-xhmR4g",
       },
       {
         id: 1,
-        title: "Social media",
-        href: "/",
+        title: "Instagram",
+        href: "https://www.instagram.com/devroagency/?hl=en",
       },
       {
         id: 2,
-        title: "Publishers",
-        href: "/",
+        title: "Facebook",
+        href: "https://www.facebook.com/devroagency/",
       },
       {
         id: 3,
-        title: "Agencies",
-        href: "/",
+        title: "TikTok",
+        href: "https://www.tiktok.com/@devroagency",
       },
     ],
   },

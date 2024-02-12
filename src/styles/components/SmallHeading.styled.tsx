@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
 export const StyledSmallHeading = styled.h4`
-    color: #3971FC;
-`
+  @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+  font-family: "Kanit", sans-serif;
+  color: #3971fc;
+`;

@@ -14,7 +14,7 @@ const ContentHeading: React.FC<ContentHeadingProps> = ({
     const ContentHeadingContent = (
       <>
         {children}
-        <span className="dot"></span>
+        <span className="dot">.</span>
       </>
     );
     if (typeof tagName === "string") {
@@ -33,11 +33,9 @@ const ContentHeading: React.FC<ContentHeadingProps> = ({
     );
   };
   return (
-    <Reveal withSlide>
-      <StyledContentHeading $mutualStyles={styles}>
-        {renderComponent()}
-      </StyledContentHeading>
-    </Reveal>
+    <StyledContentHeading $mutualStyles={styles}>
+      <Reveal withSlide>{renderComponent()}</Reveal>
+    </StyledContentHeading>
   );
 };
 

@@ -13,7 +13,10 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({
         isBottomBarOpen={isBottomBarOpen}
         setIsBottomBarOpen={setIsBottomBarOpen}
       />
-      <BottomBar isBottomBarOpen={isBottomBarOpen} />
+      <BottomBar
+        setIsBottomBarOpen={setIsBottomBarOpen}
+        isBottomBarOpen={isBottomBarOpen}
+      />
     </StyledMobileNavbar>
   );
 };

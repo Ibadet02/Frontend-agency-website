@@ -2,18 +2,18 @@ import styled from "styled-components";
 import { Theme } from "../../../theme";
 
 export const StyledFooterContent = styled.div<{ theme: Theme }>`
-  width: 75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5rem;
-  padding-inline: 1rem;
+  ${({ theme }) => theme.contentStyles};
   .footer-content__top,
   .footer-content__bottom {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    @media screen and (max-width: 820px) {
+    gap: 1.5rem;
+    @media screen and (max-width: 1040px) {
       flex-direction: column;
       gap: 3rem;
     }
@@ -26,9 +26,11 @@ export const StyledFooterContent = styled.div<{ theme: Theme }>`
       width: 12rem;
     }
     &--middle {
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+      font-family: "Josefin Sans", sans-serif;
       display: flex;
       gap: 4rem;
-      @media screen and (max-width: 820px) {
+      @media screen and (max-width: 1040px) {
         flex-direction: column;
       }
       &--link-container {

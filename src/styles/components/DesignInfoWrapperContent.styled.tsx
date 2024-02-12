@@ -1,11 +1,12 @@
 import styled, { RuleSet } from "styled-components";
+import { Theme } from "../../theme";
 
 export const StyledDesignInfoWrapperContent = styled.div<{
   $styles?: RuleSet<object>;
+  theme: Theme;
 }>`
-  width: 75rem;
-  padding-inline: 1rem;
-  @media screen and (max-width: 820px){
+  ${({ theme }) => theme.contentStyles};
+  @media screen and (max-width: 820px) {
     display: flex;
     flex-direction: column;
     align-items: center;

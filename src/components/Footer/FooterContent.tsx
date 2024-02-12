@@ -7,14 +7,16 @@ import newsLetter from "../../assets/images/newsletter.png";
 import {
   ContentHeadingProps,
   DesignInfoProps,
-  MainButtonProps,
   MainDescriptionProps,
 } from "../props";
 import { footerLinks } from "../../data/components/FooterLinks";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { css } from "styled-components";
 import DesignInfo from "../DesignInfo";
-import MainButton from "../MainButton";
+// import MainButton from "../MainButton";
+import MainButton from "../Buttons/MainButton";
+import { MainButtonProps } from "../Buttons/props";
+import Logo from "../Logo";
 const designInfoProps: DesignInfoProps = {
   styles: css`
     text-align: center;
@@ -44,13 +46,6 @@ const designInfoProps: DesignInfoProps = {
   },
   doesInputExist: true,
 };
-const contentHeadingPropsTopLeft: ContentHeadingProps = {
-  tagName: Link,
-  children: "Hexlab",
-  styles: css`
-    font-size: 1.9rem;
-  `,
-};
 const descriptionPropsTopLeft: MainDescriptionProps = {
   text: "Hexlab is a digital agency that specializes in building websites and web applications.",
   styles: css``,
@@ -64,9 +59,12 @@ const contentHeadingPropsTopRight: ContentHeadingProps = {
 };
 const mainButtonProps: MainButtonProps = {
   text: "Send",
+  textFadesOut: '30rem',
   styles: css`
     padding-block: 0.5rem;
+    justify-content: center;
   `,
+  
 };
 const descriptionPropsTopRight: MainDescriptionProps = {
   text: "Questions? Comments? We'd love to hear from you.",
@@ -78,7 +76,9 @@ const FooterContent = () => {
       <DesignInfo {...designInfoProps} />
       <div className="footer-content__top">
         <div className="footer-content__top--left">
-          <ContentHeading {...contentHeadingPropsTopLeft} />
+          <NavLink to="/">
+            <Logo />
+          </NavLink>
           <MainDescription {...descriptionPropsTopLeft} />
           <ChangeMode />
         </div>
@@ -116,7 +116,7 @@ const FooterContent = () => {
           <MainDescription {...descriptionPropsTopRight} />
           <label htmlFor="">
             <input type="text" placeholder="Enter your email" />
-            <MainButton {...mainButtonProps} />
+            <MainButton {...mainButtonProps}/>
           </label>
         </div>
       </div>

@@ -1,3 +1,5 @@
+import styled, { css } from "styled-components";
+
 export const themeData = {
   siteThemes: {
     dark: "#25292F",
@@ -30,6 +32,14 @@ export const themeData = {
 
 export const theme = {
   isDarkMode: true,
+  bodyOverflow: "auto",
+  contentStyles : css`
+    width: 75rem;
+    padding-inline: 1rem;
+    @media screen and (max-width: 1200px){
+      width: 100%;
+    } 
+  `,
   breakpoints: {
     mobile: "0px",
     tablet: "768px",
@@ -135,6 +145,7 @@ export const theme = {
   heights: {
     navbar: "4.5rem",
   },
+  
 };
 
 export type Theme = typeof theme;

@@ -5,6 +5,7 @@ export interface TopBarProps {
 
 export interface BottomBarProps {
     isBottomBarOpen: boolean;
+    setIsBottomBarOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export interface MobileNavbarProps {

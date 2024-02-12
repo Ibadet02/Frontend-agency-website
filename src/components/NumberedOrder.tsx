@@ -8,11 +8,11 @@ const NumberedOrder: React.FC<NumberedOrderProps> = ({
   styles,
 }) => {
   return (
-    <Reveal>
-      <StyledNumberedOrder $styles={styles}>
+    <StyledNumberedOrder $styles={styles}>
+      <Reveal>
         <strong>{numberContent}</strong>
-      </StyledNumberedOrder>
-    </Reveal>
+      </Reveal>
+    </StyledNumberedOrder>
   );
 };
 

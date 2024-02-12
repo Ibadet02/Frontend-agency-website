@@ -4,7 +4,7 @@ import backEndDev from "../assets/images/backend-dev.jpg";
 import fullStackDev from "../assets/images/full_stack-dev.jpg";
 import { DesignInfoWrapperProps } from "../components/props";
 import { BannerProps } from "../components/Banner/props";
-export const ourServicesBanners: Record<string, BannerProps> = {
+export const servicesBanners: Record<string, BannerProps> = {
   first: {
     styles: css`
       gap: 1rem;
@@ -24,7 +24,7 @@ export const ourServicesBanners: Record<string, BannerProps> = {
         }
       `,
       smallHeadingProps: {
-        text: "What we do",
+        text: "Services",
       },
       contentHeadingProps: {
         styles: css`
@@ -172,7 +172,7 @@ export const ourServicesBanners: Record<string, BannerProps> = {
   },
 };
 
-export const ourServicesDesignInfoWrappers: Record<
+export const servicesDesignInfoWrappers: Record<
   string,
   DesignInfoWrapperProps
 > = {

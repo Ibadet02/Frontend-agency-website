@@ -1,8 +1,11 @@
 import styled, { RuleSet } from "styled-components";
+import { Theme } from "../../../theme";
 
-export const StyledBannerContent = styled.div<{ $styles?: RuleSet<object> }>`
-  ${({ $styles }) => $styles};
+export const StyledBannerContent = styled.div<{
+  $styles?: RuleSet<object>;
+  theme: Theme;
+}>`
   display: flex;
-  width: 75rem;
-  padding-inline: 1rem;
+  ${({ $styles }) => $styles};
+  ${({ theme }) => theme.contentStyles};
 `;

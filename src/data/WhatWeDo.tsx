@@ -37,11 +37,11 @@ export const whatWeDoBanners: Record<string, BannerProps> = {
           font-size: 3rem;
         `,
         tagName: "h1",
-        children: "We make strategic design and technology solutions",
+        children: "We will level up your online presence",
       },
       descriptionProps: {
         styles: css``,
-        text: "proper business solutions for your business strategy and corporation.",
+        text: "Your success is our mission",
       },
       actionLinkProps: {
         styles: css``,
@@ -181,7 +181,10 @@ export const whatWeDoBanners: Record<string, BannerProps> = {
   },
 };
 
-export const whatWeDoDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
+export const whatWeDoDesignInfoWrappers: Record<
+  string,
+  DesignInfoWrapperProps
+> = {
   first: {
     styles: css`
       display: flex;
@@ -329,7 +332,7 @@ export const whatWeDoDesignInfoWrappers: Record<string, DesignInfoWrapperProps> 
       contentHeadingProps: {
         tagName: "h2",
         to: "/",
-        children: "Creative studio with art & technolgies",
+        children: "Passioante, Creative, and Helpful",
         styles: css`
           font-size: 2rem;
         `,
@@ -356,6 +359,7 @@ export const whatWeDoDesignInfoWrappers: Record<string, DesignInfoWrapperProps> 
           numberedOrderProps: {
             styles: css`
               grid-column: 1;
+              justify-self: end;
             `,
             numberContent: "01",
           },
@@ -370,6 +374,7 @@ export const whatWeDoDesignInfoWrappers: Record<string, DesignInfoWrapperProps> 
           descriptionProps: {
             styles: css`
               grid-column: 2;
+              grid-row: 2;
             `,
             text: "We have been in the industry for 26 years and have ",
           },
@@ -383,7 +388,7 @@ export const whatWeDoDesignInfoWrappers: Record<string, DesignInfoWrapperProps> 
           numberedOrderProps: {
             styles: css`
               grid-column: 1;
-              width: min-content;
+              justify-self: end;
             `,
             numberContent: "02",
           },
@@ -411,6 +416,7 @@ export const whatWeDoDesignInfoWrappers: Record<string, DesignInfoWrapperProps> 
           numberedOrderProps: {
             styles: css`
               grid-column: 1;
+              justify-self: end;
             `,
             numberContent: "02",
           },

@@ -1,14 +1,15 @@
 
-import { StyledNewsLetterInput } from "../styles/components/NewsLetterInput.styled";
-import MainButton from "./MainButton";
-import { MainButtonProps } from "./props";
 import { css } from "styled-components";
+import { StyledNewsLetterInput } from "../styles/components/NewsLetterInput.styled";
+// import MainButton from "./MainButton";
+import MainButton from "./Buttons/MainButton";
+import { MainButtonProps } from "./props";
 const mainButtonProps: MainButtonProps = {
   text: "Subscribe",
   styles: css`
-    width: 100%;
     height: 100%;
-  `,
+    width: 100%;
+  `
 };
 const NewsLetterInput = () => {
   return (
