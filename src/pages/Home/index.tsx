@@ -4,9 +4,9 @@ import DesignInfoWrapper from "../../components/DesignInfoWrapper";
 import {
   homeBanners,
   homeDesignInfoWrappers,
-  portfolio as portfolioProps,
+  // portfolio as portfolioProps,
 } from "../../data/Home";
-import Portfolio from "./Portfolio";
+// import Portfolio from "./Portfolio";
 import Feedbacks from "../../components/Feedbacks";
 import { feedbacks as feedbacksProps } from "../../data/components/Feedbacks";
 
