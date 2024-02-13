@@ -24,7 +24,6 @@ const infoImageSize = "100%";
 export const homeBanners: Record<string, BannerProps> = {
   first: {
     styles: css`
-      margin-top: 2rem;
       flex-direction: column;
       gap: 1rem;
       align-items: center;

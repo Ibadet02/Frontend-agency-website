@@ -144,7 +144,7 @@ export const priceGroupProps: PriceGroupProps = {
         text: "Basic",
       },
       price: {
-        text: "19$",
+        text: "150$",
         styles: css`
           font-size: 3rem;
           font-weight: 700;
@@ -158,7 +158,7 @@ export const priceGroupProps: PriceGroupProps = {
         `,
       },
       descriptionProps: {
-        text: "For most businesses that want to optimize web queries.",
+        text: "We take care of everything for you",
         styles: css``,
       },
       taskGroupProps: {
@@ -167,7 +167,7 @@ export const priceGroupProps: PriceGroupProps = {
             icon: "",
             contentHeadingProps: {
               tagName: "h4",
-              children: "All limited links",
+              children: "Free hosting",
               styles: css``,
             },
             id: 0,
@@ -176,7 +176,7 @@ export const priceGroupProps: PriceGroupProps = {
             icon: "",
             contentHeadingProps: {
               tagName: "h4",
-              children: "All limited links",
+              children: "Free available domain name",
               styles: css``,
             },
             id: 1,
@@ -185,7 +185,7 @@ export const priceGroupProps: PriceGroupProps = {
             icon: "",
             contentHeadingProps: {
               tagName: "h4",
-              children: "All limited links",
+              children: "24/7 support",
               styles: css``,
             },
             id: 2,
@@ -194,7 +194,7 @@ export const priceGroupProps: PriceGroupProps = {
             icon: "",
             contentHeadingProps: {
               tagName: "h4",
-              children: "All limited links",
+              children: "Constant updates for your website",
               styles: css``,
             },
             id: 3,
@@ -203,7 +203,7 @@ export const priceGroupProps: PriceGroupProps = {
             icon: "",
             contentHeadingProps: {
               tagName: "h4",
-              children: "All limited links",
+              children: "Maintenance included",
               styles: css``,
             },
             id: 4,

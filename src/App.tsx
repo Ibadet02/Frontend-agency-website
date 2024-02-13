@@ -7,13 +7,14 @@ import Navbar from "./components/Navbar";
 import { GlobalStyle } from "./styles/globalStyle";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
-import WhatWeDo from "./pages/What-we-do";
+// import WhatWeDo from "./pages/What-we-do";
 import Services from "./pages/Services/index.tsx";
 import OurProjects from "./pages/OurProjects";
 import Pricing from "./pages/Pricing";
 import HireUs from "./pages/HireUs";
 import Blog from "./pages/Blog.tsx";
 import Testimonials from "./pages/Testimonials/index.tsx";
+import About from "./pages/About/index.tsx";
 // import ProgressBar from "./components/ProgressBar.tsx";
 // import { useState } from "react";
 // import LoadingBar from "react-top-loading-bar";
@@ -33,7 +34,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/what-we-do" element={<WhatWeDo />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/our-projects" element={<OurProjects />} />
         <Route path="/testimonials" element={<Testimonials />} />

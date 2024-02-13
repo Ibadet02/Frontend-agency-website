@@ -4,7 +4,6 @@ const fly = keyframes`
   from {
     transform: translateY(0.1em);
   }
-
   to {
     transform: translateY(-0.1em);
   }

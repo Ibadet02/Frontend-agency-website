@@ -7,8 +7,8 @@ export const StyledContentHeading = styled.div<{
 }>`
   @import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
   font-family: "Protest Strike", sans-serif;
-  ${(props) => props.$mutualStyles};
   overflow: visible;
+  ${({ $mutualStyles }) => $mutualStyles};
   .content-heading {
     display: inline-block;
     text-decoration: none;

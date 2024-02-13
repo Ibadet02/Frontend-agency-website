@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { useTheme } from "styled-components";
 import { Theme } from "../../theme";
+import { RevealProps } from "./props";
 const Reveal: React.FC<RevealProps> = ({
   children,
   width = "fit-content",

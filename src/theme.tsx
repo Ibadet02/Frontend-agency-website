@@ -136,6 +136,11 @@ export const theme = {
           ? themeData.colors.transparent
           : themeData.colors.lightGray;
       },
+      siteThemeContrast: function () {
+        return theme.isDarkMode
+          ? themeData.colors.mainLight
+          : themeData.colors.mainDark;
+      },
       creamGray: themeData.colors.creamGray,
     };
   },

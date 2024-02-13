@@ -47,7 +47,7 @@ const designInfoProps: DesignInfoProps = {
   doesInputExist: true,
 };
 const descriptionPropsTopLeft: MainDescriptionProps = {
-  text: "DevRo is a mission-riven Web Development Agency. Specializing in creating innovative websites and fostering online community connections.",
+  text: "DevRo is a mission-driven Web Development Agency. Specializing in creating innovative websites and fostering online community connections.",
   styles: css``,
 };
 const contentHeadingPropsTopRight: ContentHeadingProps = {
