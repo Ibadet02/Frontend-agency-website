@@ -1,7 +1,7 @@
 import styled, { RuleSet } from "styled-components";
 import { Theme } from "../../theme";
 
-export const StyledMainDescription = styled.p<{
+export const StyledMainDescription = styled.div<{
   $styles?: RuleSet<object>;
   theme: Theme;
 }>`

@@ -47,7 +47,7 @@ const designInfoProps: DesignInfoProps = {
   doesInputExist: true,
 };
 const descriptionPropsTopLeft: MainDescriptionProps = {
-  text: "Hexlab is a digital agency that specializes in building websites and web applications.",
+  text: "DevRo is a mission-riven Web Development Agency. Specializing in creating innovative websites and fostering online community connections.",
   styles: css``,
 };
 const contentHeadingPropsTopRight: ContentHeadingProps = {
@@ -59,7 +59,7 @@ const contentHeadingPropsTopRight: ContentHeadingProps = {
 };
 const mainButtonProps: MainButtonProps = {
   text: "Send",
-  textFadesOut: '30rem',
+  textFadesOut: '32rem',
   styles: css`
     padding-block: 0.5rem;
     justify-content: center;
@@ -124,7 +124,7 @@ const FooterContent = () => {
         <MainDescription text="&copy 2023. Website created by Ibadet Ismayilov" />
         <div>
           <MainDescription text="Work Inquiries" />
-          <MainDescription text="ibadetismayilov20@gmail.com" />
+          <MainDescription text="Robert@devroagency.com" />
         </div>
       </div>
     </StyledFooterContent>

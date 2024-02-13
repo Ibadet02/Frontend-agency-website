@@ -4,7 +4,7 @@ import { MainButtonProps } from "./props";
 
 const MainButton: React.FC<MainButtonProps> = ({text, styles, textFadesOut}) => {
   return (
-    <StyledMainButton $styles={styles} $textFadesOut={textFadesOut}>
+    <StyledMainButton $styles={styles} $textFadesOut={textFadesOut} type="submit">
       <div className="svg-wrapper-1">
         <div className="svg-wrapper">
           <svg

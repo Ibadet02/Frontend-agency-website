@@ -10,9 +10,11 @@ const TextInputLabel: React.FC<TextInputLabelProps> = ({
   handleTextInputChange,
 }) => {
   const inputValue = type === "text" ? textInputValue : emailInputValue;
+  const isInputEmpty = inputValue === "";
   return (
-    <StyledTextInputLabel>
+    <StyledTextInputLabel className={`${!isInputEmpty && 'filled'}`}>
       <input
+        // required
         type={type}
         name={name}
         value={inputValue}

@@ -6,7 +6,7 @@ import ContentHeading from "./ContentHeading";
 import MainDescription from "./MainDescription";
 // import ActionLink from "./ActionLink";
 import NumberedOrder from "./NumberedOrder";
-import NewsLetterInput from "./NewsLetterInput";
+import NewsLetterInput from "./NewsLetterForm";
 import Reveal from "./Animation/Reveal";
 import LetsTalkButton from "./Buttons/LetsTalkButton";
 

@@ -1,22 +1,14 @@
 import React from "react";
 import { StyledRating } from "../styles/components/Rating.styled";
 import { RatingProps } from "./props";
-import star from "../assets/icons/star";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-regular-svg-icons";
+import star from "../assets/icons/star.svg";
 
 const stars = new Array(5).fill(star);
-const Rating: React.FC<RatingProps> = ({  }) => {
+const Rating: React.FC<RatingProps> = ({}) => {
   return (
     <StyledRating>
-      {stars.map((_icon, index) => {
-        return (
-          <FontAwesomeIcon
-            key={index}
-            icon={faStar}
-            style={{ color: "#FFD43B", fill: "#FFD43B" }}
-          />
-        );
+      {stars.map((icon, index) => {
+        return <img key={index} src={icon} alt="" />;
       })}
     </StyledRating>
   );

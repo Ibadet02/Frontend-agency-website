@@ -7,6 +7,11 @@ export const StyledTextInputLabel = styled.label`
   transition-property: border-color;
   transition-duration: 0.4s;
   transition-timing-function: ease;
+  &.filled {
+    span {
+      display: none;
+    }
+  }
   input {
     width: 100%;
     position: relative;
@@ -20,15 +25,18 @@ export const StyledTextInputLabel = styled.label`
     transition-timing-function: ease;
     font-size: 1.6rem;
     font-weight: 400;
-    padding-bottom: .9rem;
+    padding-bottom: 0.9rem;
     border-color: #7c8698;
-    border-bottom: .01rem solid #44526c;
+    border-bottom: 0.01rem solid #44526c;
     color: #dfe1e6;
     &:active + span,
-    &:focus + span
-    /* &:not([value=""]) + span */ {
+    &:focus + span {
       visibility: hidden;
       opacity: 0;
+    }
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus {
+      transition: background-color 0s 600000s, color 0s 600000s !important;
     }
   }
   span {
@@ -42,22 +50,5 @@ export const StyledTextInputLabel = styled.label`
     font-size: 1.4rem;
     font-weight: 400;
     padding-bottom: 0.9rem;
-    /* Hide the span when input is focused */
-    /* &:focus ~ & {
-      visibility: hidden;
-      opacity: 0;
-    } */
-
-    /* Show the span again when input is blurred, unless input has content */
-    /* &:not(:focus) {
-      visibility: visible;
-      opacity: 1;
-    } */
-
-    /* Exception: Keep span hidden if input has content when blurred */
-    /* &:not(:focus):not([value=""]) {
-      visibility: hidden;
-      opacity: 0;
-    } */
   }
 `;

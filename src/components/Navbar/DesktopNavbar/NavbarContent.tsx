@@ -9,12 +9,14 @@ const NavbarContent = () => {
         <Logo />
       </NavLink>
       <div className="nav-links">
-        <NavLink to={"/"}>Home</NavLink>
-        <NavLink to={"/what-we-do"}>What we do?</NavLink>
-        <NavLink to={"/services"}>Services</NavLink>
-        <NavLink to={"/our-projects"}>Portfolio</NavLink>
-        <NavLink to={"/pricing"}>Pricing</NavLink>
-        <NavLink to={"/blog"}>Blog</NavLink>
+        {/* <NavLink to={"/what-we-do"}>What we do?</NavLink> */}
+        <NavLink to={"/about-us"}>ABOUT US</NavLink>
+        <NavLink to={"/services"}>SERVICES</NavLink>
+        <NavLink to={"/our-projects"}>PORTFOLIO</NavLink>
+        <NavLink to={"/"}>HOME</NavLink>
+        <NavLink to={"/testimonials"}>TESTIMONIALS</NavLink>
+        <NavLink to={"/pricing"}>PRICING</NavLink>
+        <NavLink to={"/blog"}>BLOG</NavLink>
       </div>
       <LetsTalkButton title="Let's talk" path="/hire-us" />
     </StyledNavbarContent>

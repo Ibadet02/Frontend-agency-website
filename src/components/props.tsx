@@ -125,3 +125,8 @@ export interface MainButtonProps {
   text: string;
   styles?: RuleSet<object>;
 }
+
+export interface MessageProps {
+  text: string;
+  isVisible: boolean;
+}

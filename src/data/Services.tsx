@@ -4,6 +4,11 @@ import backEndDev from "../assets/images/backend-dev.jpg";
 import fullStackDev from "../assets/images/full_stack-dev.jpg";
 import { DesignInfoWrapperProps } from "../components/props";
 import { BannerProps } from "../components/Banner/props";
+import webDesign from "../assets/images/web-design.png";
+import appDesign from "../assets/images/app-design.png";
+import uiUxDesign from "../assets/images/ui-ux-design.png";
+import brandDesign from "../assets/images/brand-design.png";
+
 export const servicesBanners: Record<string, BannerProps> = {
   first: {
     styles: css`
@@ -294,5 +299,158 @@ export const servicesDesignInfoWrappers: Record<
       `,
     },
     styles: css``,
+  },
+  second : {
+    designInfoGroupProps: {
+      designInfosProps: [
+        {
+          id: 0,
+          img: {
+            src: webDesign,
+            alt: "Web Development",
+          },
+          // smallHeadingProps: {
+          //   text: "Web Development",
+          // },
+          contentHeadingProps: {
+            tagName: "h3",
+            to: "/",
+            children: "Web Development",
+            styles: css``,
+          },
+          descriptionProps: {
+            text: "Our team will make website for you!",
+            styles: css``,
+          },
+          styles: css`
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+            margin-top: 2rem;
+            @media screen and (max-width: 820px) {
+              margin: 0;
+            }
+          `,
+        },
+        {
+          id: 1,
+          img: {
+            src: appDesign,
+            alt: "App Design",
+          },
+          // smallHeadingProps: {
+          //   text: "App Design",
+          // },
+          contentHeadingProps: {
+            tagName: "h3",
+            to: "/",
+            children: "Web maintenance",
+            styles: css``,
+          },
+          descriptionProps: {
+            text: "Do not stress! We make sure everything is working!",
+            styles: css``,
+          },
+          styles: css`
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+          `,
+        },
+        {
+          id: 2,
+          img: {
+            src: uiUxDesign,
+            alt: "UI/UX Design",
+          },
+          // smallHeadingProps: {
+          //   text: "UIUX Design",
+          // },
+          contentHeadingProps: {
+            tagName: "h3",
+            to: "/",
+            children: "Constant support",
+            styles: css``,
+          },
+          descriptionProps: {
+            text: "In case you want to make changes, we are here for you!",
+            styles: css``,
+          },
+          styles: css`
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+            @media screen and (max-width: 820px) {
+              margin: 0;
+            }
+          `,
+        },
+        {
+          id: 3,
+          img: {
+            src: brandDesign,
+            alt: "Brand Design",
+          },
+          // smallHeadingProps: {
+          //   text: "Brand Design",
+          // },
+          contentHeadingProps: {
+            tagName: "h3",
+            to: "/",
+            children: "Brand Design",
+            styles: css``,
+          },
+          descriptionProps: {
+            text: "Our Creative team made great and beautiful brands.",
+            styles: css``,
+          },
+          styles: css`
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+          `,
+        },
+      ],
+      styles: css`
+        text-align: center;
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      `,
+    },
+    designInfoProps: {
+      smallHeadingProps: {
+        text: "What we do",
+      },
+      contentHeadingProps: {
+        tagName: "h2",
+        to: "/",
+        children: "We are the team that will take care of your online presence",
+        styles: css`
+          font-size: 2rem;
+        `,
+      },
+      styles: css`
+        flex-basis: 50%;
+        text-align: left;
+        @media screen and (max-width: 820px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      `,
+    },
+    styles: css`
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    `,
   },
 };

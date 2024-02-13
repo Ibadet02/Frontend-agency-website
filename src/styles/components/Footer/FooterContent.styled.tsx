@@ -23,7 +23,7 @@ export const StyledFooterContent = styled.div<{ theme: Theme }>`
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      width: 12rem;
+      width: 16rem;
     }
     &--middle {
       @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");

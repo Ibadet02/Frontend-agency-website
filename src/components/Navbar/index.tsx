@@ -5,7 +5,7 @@ import DesktopNavbar from "./DesktopNavbar";
 import MobileNavbar from "./MobileNavbar";
 import { useTheme } from "../../context/ThemeContext";
 const Navbar = () => {
-  const isMobile = useMediaQuery(825);
+  const isMobile = useMediaQuery(1055);
   const [isNavbarVisible, setIsNavbarVisible] = useState<boolean>(true);
   const [isBottomBarOpen, setIsBottomBarOpen] = useState<boolean>(false);
   const { updateTheme } = useTheme();

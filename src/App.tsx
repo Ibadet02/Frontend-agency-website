@@ -13,6 +13,7 @@ import OurProjects from "./pages/OurProjects";
 import Pricing from "./pages/Pricing";
 import HireUs from "./pages/HireUs";
 import Blog from "./pages/Blog.tsx";
+import Testimonials from "./pages/Testimonials/index.tsx";
 // import ProgressBar from "./components/ProgressBar.tsx";
 // import { useState } from "react";
 // import LoadingBar from "react-top-loading-bar";
@@ -35,6 +36,7 @@ function App() {
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/services" element={<Services />} />
         <Route path="/our-projects" element={<OurProjects />} />
+        <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/hire-us" element={<HireUs />} />

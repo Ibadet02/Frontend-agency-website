@@ -4,20 +4,19 @@ import Banner from "../../components/Banner";
 import DesignInfoWrapper from "../../components/DesignInfoWrapper";
 import { servicesDesignInfoWrappers } from "../../data/Services";
 import { whatWeDoDesignInfoWrappers } from "../../data/WhatWeDo";
-import Feedbacks from "../../components/Feedbacks";
-import { feedbacks as feedbacksProps } from "../../data/components/Feedbacks";
 
-const { first: firstDesignInfoWrapperProps } = servicesDesignInfoWrappers;
+const { first: firstDesignInfoWrapperProps, second: secondDesignInfoWrapperProps } = servicesDesignInfoWrappers;
 
 const { first: firstBannerProps } = servicesBanners;
-const { second: secondDesignInfoWrappers } = whatWeDoDesignInfoWrappers;
+const { second: thirdDesignInfoWrapperProps } = whatWeDoDesignInfoWrappers;
 const Services = () => {
   return (
     <StyledServices>
       <Banner {...firstBannerProps} />
       <DesignInfoWrapper {...firstDesignInfoWrapperProps} />
-      <DesignInfoWrapper {...secondDesignInfoWrappers} />
-      <Feedbacks {...feedbacksProps} />
+      <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
+      <DesignInfoWrapper {...thirdDesignInfoWrapperProps} />
+      {/* <Feedbacks {...feedbacksProps} /> */}
     </StyledServices>
   );
 };

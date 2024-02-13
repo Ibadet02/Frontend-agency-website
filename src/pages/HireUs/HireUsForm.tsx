@@ -2,6 +2,7 @@ import { useState } from "react";
 import { StyledHireUsForm } from "../../styles/HireUs/HireUsForm.styled";
 import HireUsFormContent from "./HireUsFormContent";
 import { HireUsFormProps } from "./props";
+import useCreateDoc from "../../hooks/useCreateDoc";
 
 const HireUsForm: React.FC<HireUsFormProps> = (props) => {
   const [formData, setFormData] = useState<{
@@ -15,6 +16,7 @@ const HireUsForm: React.FC<HireUsFormProps> = (props) => {
     name: "",
     email: "",
   });
+  const { createDoc } = useCreateDoc("client-requests");
   const handleTickInputChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
@@ -50,9 +52,15 @@ const HireUsForm: React.FC<HireUsFormProps> = (props) => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // sendEmail(formData);
-    console.log(formData);
-    // Add your form submission logic here
+    if(formData) {
+      createDoc(formData);
+      setFormData({
+        projectType: [],
+        budget: "",
+        name: "",
+        email: "",
+      });
+    }
   };
   return (
     <StyledHireUsForm onSubmit={handleSubmit}>

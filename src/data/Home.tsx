@@ -125,26 +125,26 @@ export const homeBanners: Record<string, BannerProps> = {
           text-align: center;
         }
       `,
-      img: {
-        src: ourTeam,
-        alt: "Our Team",
-      },
+      // img: {
+      //   src: ourTeam,
+      //   alt: "Our Team",
+      // },
       smallHeadingProps: {
-        text: "small heading",
+        text: "Not some ordinary developers!",
       },
       contentHeadingProps: {
         styles: css`
           font-size: 3rem;
         `,
         tagName: "h1",
-        children: "We are digital products creators",
+        children: "We are your long-term partners",
       },
       descriptionProps: {
         styles: css``,
-        text: "This is a description",
+        text: 'Our mission is to become your long-term partners. We want to build a genuine relationship with our clients. "Alone, we can do so little; together, we can do so much."- Helen Keller',
       },
       actionLinkProps: {
-        title: "Let's Get Started",
+        title: "Let's have a meeting!",
         path: "/hire-us",
       },
     },
@@ -366,19 +366,19 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
           id: 0,
           img: {
             src: webDesign,
-            alt: "Web Design",
+            alt: "Web Development",
           },
-          smallHeadingProps: {
-            text: "Web Design",
-          },
+          // smallHeadingProps: {
+          //   text: "Web Development",
+          // },
           contentHeadingProps: {
             tagName: "h3",
             to: "/",
-            children: "Website Design",
+            children: "Web Development",
             styles: css``,
           },
           descriptionProps: {
-            text: "Our Creative team made great and beautiful websites.",
+            text: "Our team will make website for you!",
             styles: css``,
           },
           styles: css`
@@ -398,17 +398,17 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
             src: appDesign,
             alt: "App Design",
           },
-          smallHeadingProps: {
-            text: "App Design",
-          },
+          // smallHeadingProps: {
+          //   text: "App Design",
+          // },
           contentHeadingProps: {
             tagName: "h3",
             to: "/",
-            children: "Mobile App Design",
+            children: "Web maintenance",
             styles: css``,
           },
           descriptionProps: {
-            text: "Our Creative team made great and beautiful apps.",
+            text: "Do not stress! We make sure everything is working!",
             styles: css``,
           },
           styles: css`
@@ -424,17 +424,17 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
             src: uiUxDesign,
             alt: "UI/UX Design",
           },
-          smallHeadingProps: {
-            text: "UIUX Design",
-          },
+          // smallHeadingProps: {
+          //   text: "UIUX Design",
+          // },
           contentHeadingProps: {
             tagName: "h3",
             to: "/",
-            children: "UIUX Design",
+            children: "Constant support",
             styles: css``,
           },
           descriptionProps: {
-            text: "Our Creative team made great and beautiful UIUX Designs.",
+            text: "In case you want to make changes, we are here for you!",
             styles: css``,
           },
           styles: css`
@@ -454,9 +454,9 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
             src: brandDesign,
             alt: "Brand Design",
           },
-          smallHeadingProps: {
-            text: "Brand Design",
-          },
+          // smallHeadingProps: {
+          //   text: "Brand Design",
+          // },
           contentHeadingProps: {
             tagName: "h3",
             to: "/",
@@ -490,8 +490,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
       contentHeadingProps: {
         tagName: "h2",
         to: "/",
-        children:
-          "We are a team of creatives who are exited about unique ideas",
+        children: "We are the team that will take care of your online presence",
         styles: css`
           font-size: 2rem;
         `,
@@ -542,13 +541,13 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
       contentHeadingProps: {
         tagName: "h2",
         to: "/",
-        children: "Experienced, Creative, and Helpful",
+        children: "Passionate, Creative, and Helpful",
         styles: css`
           font-size: 2rem;
         `,
       },
       descriptionProps: {
-        text: "We have been in the industry for 26 years and have succesfully launched over 800 websites and 150 mobile applications.",
+        text: "We are a passionate team of young web developers dedicated to creating meaningful online experiences, driven by our love for innovation and genuine commitment to our clients' success.",
         styles: css``,
       },
       actionLinkProps: {
@@ -585,11 +584,11 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
           contentHeadingProps: {
             tagName: "h3",
             to: "/",
-            children: "+26 years experience",
+            children: "Passionate Team",
             styles: css``,
           },
           descriptionProps: {
-            text: "We have been in the industry for 26 years and have succesfully launched over 800 websites and 150 mobile applications.",
+            text: "All the core of our work lies our passion, driving us to push boundaries and elevate your online presence to a new level.",
             styles: css``,
           },
         },
@@ -606,7 +605,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
             styles: css``,
           },
           descriptionProps: {
-            text: "We are the create team that brings your ideas to life.",
+            text: "Creativity is our compass, guiding us to design digital masterpieces that captivate and inspire your audience.",
             styles: css``,
           },
         },
@@ -623,7 +622,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
             styles: css``,
           },
           descriptionProps: {
-            text: "We love to help clients to achieve their online goals.",
+            text: "Our mission is to make you succeed. We mean that.",
             styles: css``,
           },
         },

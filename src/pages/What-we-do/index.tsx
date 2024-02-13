@@ -7,13 +7,12 @@ import {
 import DesignInfoWrapper from "../../components/DesignInfoWrapper";
 
 const { first: firstBannerProps } = whatWeDoBanners;
-const { first: firstDesignInfoWrappers, second: secondDesignInfoWrappers } =
+const { second: secondDesignInfoWrappers } =
   whatWeDoDesignInfoWrappers;
 const WhatWeDo = () => {
   return (
     <StyledWhatWeDo>
       <Banner {...firstBannerProps} />
-      <DesignInfoWrapper {...firstDesignInfoWrappers} />
       <DesignInfoWrapper {...secondDesignInfoWrappers} />
     </StyledWhatWeDo>
   );
