@@ -18,29 +18,29 @@ const BottomBar: React.FC<BottomBarProps> = ({
     >
       <StyledBottomBar ref={nodeRef}>
         <div className="nav-links">
+          <NavLink to={"/about-us"} onClick={() => setIsBottomBarOpen(false)}>
+            ABOUT US
+          </NavLink>
+          <NavLink to={"/services"} onClick={() => setIsBottomBarOpen(false)}>
+            SERVICES
+          </NavLink>
+          <NavLink to={"/portfolio"} onClick={() => setIsBottomBarOpen(false)}>
+            PORTFOLIO
+          </NavLink>
           <NavLink to={"/"} onClick={() => setIsBottomBarOpen(false)}>
-            Home
-          </NavLink>
-          <NavLink to={"/what-we-do"} onClick={() => setIsBottomBarOpen(false)}>
-            What we do?
+            HOME
           </NavLink>
           <NavLink
-            to={"/services"}
+            to={"/testimonials"}
             onClick={() => setIsBottomBarOpen(false)}
           >
-            Services
-          </NavLink>
-          <NavLink
-            to={"/our-projects"}
-            onClick={() => setIsBottomBarOpen(false)}
-          >
-            Portfolio
+            TESTIMONIALS
           </NavLink>
           <NavLink to={"/pricing"} onClick={() => setIsBottomBarOpen(false)}>
-            Pricing
+            PRICING
           </NavLink>
           <NavLink to={"/blog"} onClick={() => setIsBottomBarOpen(false)}>
-            Blog
+            BLOG
           </NavLink>
         </div>
       </StyledBottomBar>

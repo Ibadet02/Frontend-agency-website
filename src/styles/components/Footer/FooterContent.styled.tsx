@@ -86,5 +86,12 @@ export const StyledFooterContent = styled.div<{ theme: Theme }>`
     }
   }
   .footer-content__bottom {
+    a {
+      color: ${({ theme }) => theme.colors().mainLink()};
+      transition: color ${({ theme }) => theme.transitions.changeMode};
+      &:hover {
+        color: ${({ theme }) => theme.colors().mainLinkHover()};
+      }
+    }
   }
 `;

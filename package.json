@@ -28,6 +28,7 @@
     "react-scroll": "^1.9.0",
     "react-top-loading-bar": "^2.3.1",
     "react-transition-group": "^4.4.5",
+    "smooth-scrollbar": "^8.8.4",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {

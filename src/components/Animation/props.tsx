@@ -6,4 +6,5 @@ export interface RevealProps {
 
 export interface TypeEffectProps {
     children: React.ReactNode;
+    letterCount: number;
 }

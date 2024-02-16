@@ -12,6 +12,9 @@ export const StyledPrice = styled.div<{theme: Theme}>`
   padding: 2rem;
   border-radius: 4rem;
   &.popular {
+    #small-heading {
+      color: #fff;
+    }
     background-color: ${({ theme }) => theme.colors().mainBlue};
     a {
       background-color: ${({ theme }) => theme.colors().white};

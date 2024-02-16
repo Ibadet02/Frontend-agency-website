@@ -4,7 +4,7 @@ export const accordions: AccordionProps[] = [
   {
     heading: "How much does a website cost?",
     description:
-      "We do not charge for a website. Instead, we have subscriptions. There is no payment upfront. You can choose from 4 subscription models, that are listed above the FAQ section. At this price, we will optimize your website and maintain it. In case you want to make changes to the website, just text us! Apart from this, we will also take care of your online presence.",
+      "We do not charge for a website. Instead, we have subscriptions. There is no payment upfront. For the moment, there is only one subscription, and you can find it above the FAQ section. At this price, we will optimize your website and maintain it.",
     id: 1,
   },
   {

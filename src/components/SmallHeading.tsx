@@ -5,7 +5,7 @@ import TypeEffect from "./Animation/TypeEffect";
 
 const SmallHeading: React.FC<SmallHeadingProps> = ({ text }) => {
   return (
-    <TypeEffect>
+    <TypeEffect letterCount={text.length}>
       <StyledSmallHeading id="small-heading">{text}</StyledSmallHeading>
     </TypeEffect>
   );

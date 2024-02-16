@@ -1,4 +1,3 @@
-
 import { StyledFooterContent } from "../../styles/components/Footer/FooterContent.styled";
 import ContentHeading from "../ContentHeading";
 import MainDescription from "../MainDescription";
@@ -17,6 +16,7 @@ import DesignInfo from "../DesignInfo";
 import MainButton from "../Buttons/MainButton";
 import { MainButtonProps } from "../Buttons/props";
 import Logo from "../Logo";
+import Reveal from "../Animation/Reveal";
 const designInfoProps: DesignInfoProps = {
   styles: css`
     text-align: center;
@@ -59,12 +59,11 @@ const contentHeadingPropsTopRight: ContentHeadingProps = {
 };
 const mainButtonProps: MainButtonProps = {
   text: "Send",
-  textFadesOut: '32rem',
+  textFadesOut: "32rem",
   styles: css`
     padding-block: 0.5rem;
     justify-content: center;
   `,
-  
 };
 const descriptionPropsTopRight: MainDescriptionProps = {
   text: "Questions? Comments? We'd love to hear from you.",
@@ -116,7 +115,7 @@ const FooterContent = () => {
           <MainDescription {...descriptionPropsTopRight} />
           <label htmlFor="">
             <input type="text" placeholder="Enter your email" />
-            <MainButton {...mainButtonProps}/>
+            <MainButton {...mainButtonProps} />
           </label>
         </div>
       </div>
@@ -124,7 +123,11 @@ const FooterContent = () => {
         <MainDescription text="&copy 2023. Website created by Ibadet Ismayilov" />
         <div>
           <MainDescription text="Work Inquiries" />
-          <MainDescription text="Robert@devroagency.com" />
+          <Reveal withSlide>
+            <a target="_blank" href="mailto:Robert@devroagency.com">
+              Robert@devroagency.com
+            </a>
+          </Reveal>
         </div>
       </div>
     </StyledFooterContent>

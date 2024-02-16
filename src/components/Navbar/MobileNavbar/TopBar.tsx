@@ -16,7 +16,7 @@ const TopBar: React.FC<TopBarProps> = ({
         </NavLink>
       </div>
       <div className="top-bar__right">
-        <LetsTalkButton title="Let's talk" path="/hire-us" />
+        <LetsTalkButton title="Schedule a meeting!" path="/hire-us" />
         <div
           className={`menu-bars ${isBottomBarOpen && "active"}`}
           onClick={() => setIsBottomBarOpen((prev) => !prev)}

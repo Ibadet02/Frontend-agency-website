@@ -42,11 +42,11 @@ export const homeBanners: Record<string, BannerProps> = {
           font-size: 3rem;
         `,
         tagName: "h1",
-        children: "We are digital products creators",
+        children: "You dream it, we code it",
       },
       descriptionProps: {
         styles: css``,
-        text: "Proper business solutions for your business project",
+        text: "Proper website for your online presence",
       },
       actionLinkProps: {
         styles: css`

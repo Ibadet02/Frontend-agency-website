@@ -7,8 +7,8 @@ import {
   // portfolio as portfolioProps,
 } from "../../data/Home";
 // import Portfolio from "./Portfolio";
-import Feedbacks from "../../components/Feedbacks";
-import { feedbacks as feedbacksProps } from "../../data/components/Feedbacks";
+// import Feedbacks from "../../components/Feedbacks";
+// import { feedbacks as feedbacksProps } from "../../data/components/Feedbacks";
 
 const {
   first: firstBannerProps,
@@ -29,7 +29,7 @@ const Home = () => {
       <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
       {/* <Portfolio {...portfolioProps} /> */}
       <Banner {...thirdBannerProps} />
-      <Feedbacks {...feedbacksProps} />
+      {/* <Feedbacks {...feedbacksProps} /> */}
     </StyledHome>
   );
 };

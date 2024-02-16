@@ -27,11 +27,6 @@ export const footerLinks = [
         href: "/",
       },
       {
-        id: 3,
-        title: "What we do",
-        href: "/",
-      },
-      {
         id: 4,
         title: "Services",
         href: "/",

@@ -1,13 +1,7 @@
-
-import { StyledAbout } from '../../styles/About/index.styled'
-import Construction from '../../components/Construction'
+import { StyledAbout } from "../../styles/About/index.styled";
 
 const About = () => {
-  return (
-    <StyledAbout>
-        <Construction />
-    </StyledAbout>
-  )
-}
+  return <StyledAbout></StyledAbout>;
+};
 
-export default About
+export default About;

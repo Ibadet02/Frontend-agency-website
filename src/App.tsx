@@ -15,12 +15,15 @@ import HireUs from "./pages/HireUs";
 import Blog from "./pages/Blog.tsx";
 import Testimonials from "./pages/Testimonials/index.tsx";
 import About from "./pages/About/index.tsx";
+import SmoothScroll from "./components/SmoothScroll.tsx";
 // import ProgressBar from "./components/ProgressBar.tsx";
 // import { useState } from "react";
 // import LoadingBar from "react-top-loading-bar";
 // import { useTheme } from "./context/ThemeContext.tsx";
 function App() {
   const { theme } = useTheme();
+
+
   // const [progress, setProgress] = useState(0);
   return (
     <>
@@ -32,11 +35,13 @@ function App() {
         onLoaderFinished={() => setProgress(0)}
       /> */}
       <Navbar />
+      <SmoothScroll />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/our-projects" element={<OurProjects />} />
+        <Route path="/portfolio" element={<OurProjects />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
