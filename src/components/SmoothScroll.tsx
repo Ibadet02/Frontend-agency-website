@@ -1,13 +1,31 @@
 import React, { ReactNode, useEffect, useRef } from "react";
 
 import useWindowSize from "../hooks/useWindowSize";
+import { useLocation } from "react-router-dom";
 
 const SmoothScroll: React.FC<{ children: ReactNode }> = ({ children }) => {
   // 1.
   const windowSize = useWindowSize();
-
+  const location = useLocation();
   //2.
   const scrollingContainerRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const handleResize = () => {
+      if (scrollingContainerRef.current) {
+        document.body.style.height = `${
+          scrollingContainerRef.current.getBoundingClientRect().height
+        }px`;
+      }
+    };
+
+    handleResize(); // Initial setup
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   // 3.
   const data = {
@@ -18,15 +36,16 @@ const SmoothScroll: React.FC<{ children: ReactNode }> = ({ children }) => {
   };
 
   // 4.
-  useEffect(() => {
-    setBodyHeight();
-  }, [windowSize.height]);
 
   const setBodyHeight = () => {
     document.body.style.height = `${
       scrollingContainerRef.current?.getBoundingClientRect().height
     }px`;
   };
+  console.log(windowSize.height);
+  useEffect(() => {
+    setBodyHeight();
+  }, [windowSize.height, location]);
 
   // 5.
   useEffect(() => {
