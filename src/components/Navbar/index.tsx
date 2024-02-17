@@ -30,14 +30,19 @@ const Navbar = () => {
     let lastScrollY = window.scrollY;
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+      // console.log("scrolling");
+      // console.log("lastScrollY", lastScrollY + " currentScrollY", currentScrollY);
       if (lastScrollY < currentScrollY) {
+        // console.log("scrolling down");
         setIsNavbarVisible(false);
       } else {
+        // console.log("scrolling up");
         setIsNavbarVisible(true);
       }
       lastScrollY = currentScrollY;
     };
     if (!isBottomBarOpen) {
+      // console.log("adding event listener");
       window.addEventListener("scroll", handleScroll);
     }
     updateTheme((prevTheme) => ({

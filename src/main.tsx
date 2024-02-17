@@ -9,6 +9,7 @@ import {
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
+
     <ThemeProvider>
       <StyledThemeProviderWrapper>
         <BrowserRouter>
