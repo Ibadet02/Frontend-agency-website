@@ -53,7 +53,7 @@ export const priceGroupProps: PriceGroupProps = {
         text: "Basic",
       },
       price: {
-        text: "150$",
+        text: "150€",
         styles: css`
           font-size: 3rem;
           font-weight: 700;

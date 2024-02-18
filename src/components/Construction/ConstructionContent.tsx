@@ -5,8 +5,9 @@ import { css } from "styled-components";
 import NewsLetterForm from "../NewsLetterForm";
 import SmallHeading from "../SmallHeading";
 import Reveal from "../Animation/Reveal";
+import { ConstructionContentProps } from "./props";
 
-const ConstructionContent = () => {
+const ConstructionContent: React.FC<ConstructionContentProps> = ({ text }) => {
   return (
     <StyledConstructionContent>
       <div className="construction-svg-wrapper">
@@ -23,9 +24,7 @@ const ConstructionContent = () => {
             font-size: 1.8rem;
           `}
         >
-          Caution! Website under construction. We're adding more zeros to our
-          code to make it 1000% better. It's a math thing, you wouldn't
-          understand
+          {text}
         </ContentHeading>
         <NewsLetterForm />
       </div>

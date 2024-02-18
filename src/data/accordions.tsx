@@ -56,7 +56,7 @@ export const accordions: AccordionProps[] = [
     id: 9,
   },
   {
-    heading: "What is the difference between the subscriptions?",
+    heading: "How do I start?",
     description:
       "For that, we will be delighted to hop on a call with you! Do not hesitate, we are friendly!",
     id: 10,

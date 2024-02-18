@@ -2,6 +2,7 @@ import React, { ReactNode, useEffect, useRef } from "react";
 
 import useWindowSize from "../hooks/useWindowSize";
 import { useLocation } from "react-router-dom";
+import ScrollToTop from "./Buttons/ScrollToTop";
 
 const SmoothScroll: React.FC<{ children: ReactNode }> = ({ children }) => {
   // 1.
@@ -42,7 +43,6 @@ const SmoothScroll: React.FC<{ children: ReactNode }> = ({ children }) => {
       scrollingContainerRef.current?.getBoundingClientRect().height
     }px`;
   };
-  console.log(windowSize.height);
   useEffect(() => {
     setBodyHeight();
   }, [windowSize.height, location]);
@@ -75,6 +75,7 @@ const SmoothScroll: React.FC<{ children: ReactNode }> = ({ children }) => {
         overflow: "hidden",
       }}
     >
+      <ScrollToTop />
       <div ref={scrollingContainerRef}>{children}</div>
     </div>
   );

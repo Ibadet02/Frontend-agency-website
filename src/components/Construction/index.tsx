@@ -2,11 +2,12 @@
 
 import { StyledConstruction } from '../../styles/components/Construction/index.styled';
 import ConstructionContent from './ConstructionContent';
+import { ConstructionProps } from './props';
 
-const Construction = () => {
+const Construction: React.FC<ConstructionProps> = ({text}) => {
   return (
     <StyledConstruction>
-        <ConstructionContent />
+        <ConstructionContent text={text} />
     </StyledConstruction>
   )
 }

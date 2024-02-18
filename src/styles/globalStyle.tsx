@@ -45,7 +45,7 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
         transition: background-color ${({ theme }) =>
           theme.transitions.changeMode};
         overflow: ${({ theme }) => theme.bodyOverflow};
-        /* height: 100vh; */
+        height: 100vh;
         .container{
             
         }

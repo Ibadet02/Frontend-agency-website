@@ -16,10 +16,10 @@ export const StyledImage = styled.figure<{
   $isCircle: boolean;
   $styles?: RuleSet<object>;
 }>`
-  ${({ $styles }) => $styles};
+  
   width: 15rem;
   .image {
-    aspect-ratio: ${(props) => (props.$isCircle ? "1/1" : "4/5.5")};
+    aspect-ratio: ${(props) => (props.$isCircle ? "1/1" : "4/3.5")};
     width: 100%;
     border-radius: ${(props) => (props.$isCircle ? "50%" : "40%")};
     animation: ${fly} 3s ease-in-out infinite alternate;
@@ -29,4 +29,5 @@ export const StyledImage = styled.figure<{
     /* position: absolute; */
     bottom: 0;
   }
+  ${({ $styles }) => $styles};
 `;
