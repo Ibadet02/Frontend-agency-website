@@ -1,7 +1,5 @@
 import { css } from "styled-components";
-import frontEndDev from "../assets/images/frontend-dev.jpg";
 import backEndDev from "../assets/images/backend-dev.jpg";
-import fullStackDev from "../assets/images/full_stack-dev.jpg";
 import { DesignInfoWrapperProps } from "../components/props";
 import { BannerProps } from "../components/Banner/props";
 import webDesign from "../assets/images/web-design.png";
@@ -12,8 +10,8 @@ import brandDesign from "../assets/images/brand-design.png";
 export const servicesBanners: Record<string, BannerProps> = {
   first: {
     styles: css`
-      gap: 1rem;
-      @media screen and (max-width: 990px) {
+      gap: 2rem;
+      @media screen and (max-width: 1170px) {
         flex-direction: column;
         text-align: center;
       }
@@ -23,7 +21,7 @@ export const servicesBanners: Record<string, BannerProps> = {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        @media screen and (max-width: 990px) {
+        @media screen and (max-width: 1170px) {
           flex-direction: column;
           align-items: center;
         }
@@ -52,7 +50,7 @@ export const servicesBanners: Record<string, BannerProps> = {
     imageDemonstratorProps: {
       imagesProps: [
         {
-          src: frontEndDev,
+          src: backEndDev,
           alt: "Frontend Developer",
           id: 0,
           className: "image-1",
@@ -81,45 +79,46 @@ export const servicesBanners: Record<string, BannerProps> = {
           },
           styles: css`
             grid-column: 1;
+            width: 20rem;
             position: relative;
           `,
         },
+        // {
+        //   src: backEndDev,
+        //   alt: "BackEnd Developer",
+        //   id: 1,
+        //   className: "image-2",
+        //   isCircle: true,
+        //   imageCaptionProps: {
+        //     styles: css`
+        //       position: absolute;
+        //       width: 100%;
+        //       bottom: 0;
+        //       .caption-text {
+        //         width: 70%;
+        //         background-color: #fff;
+        //         padding: 0.6rem;
+        //         border-radius: 0.7rem;
+        //       }
+        //     `,
+        //     headingProps: {
+        //       text: "Sarah Din",
+        //       styles: css`
+        //         color: #000;
+        //       `,
+        //     },
+        //     descriptionProps: {
+        //       text: "Sr. BackEnd Developer",
+        //     },
+        //   },
+        //   styles: css`
+        //     grid-column: 1;
+        //     grid-row: 2;
+        //     position: relative;
+        //   `,
+        // },
         {
           src: backEndDev,
-          alt: "BackEnd Developer",
-          id: 1,
-          className: "image-2",
-          isCircle: true,
-          imageCaptionProps: {
-            styles: css`
-              position: absolute;
-              width: 100%;
-              bottom: 0;
-              .caption-text {
-                width: 70%;
-                background-color: #fff;
-                padding: 0.6rem;
-                border-radius: 0.7rem;
-              }
-            `,
-            headingProps: {
-              text: "Sarah Din",
-              styles: css`
-                color: #000;
-              `,
-            },
-            descriptionProps: {
-              text: "Sr. BackEnd Developer",
-            },
-          },
-          styles: css`
-            grid-column: 1;
-            grid-row: 2;
-            position: relative;
-          `,
-        },
-        {
-          src: fullStackDev,
           alt: "FullStack Developer",
           id: 2,
           className: "image-3",
@@ -147,11 +146,12 @@ export const servicesBanners: Record<string, BannerProps> = {
             },
           },
           styles: css`
-            /* grid-column: 2; */
-            align-self: center;
-            grid-row: span 2; /* Spans 2 rows */
-            justify-self: center; /* Horizontally center the item within its grid cell */
-            place-self: center stretch;
+            grid-column: 2;
+            /* align-self: center; */
+            grid-row: 2; /* Spans 2 rows */
+            /* justify-self: center; Horizontally center the item within its grid cell */
+            /* place-self: center stretch; */
+            width: 20rem;
             position: relative;
           `,
         },
@@ -160,15 +160,15 @@ export const servicesBanners: Record<string, BannerProps> = {
         display: grid;
         grid-template-columns: 1fr 3fr;
         gap: 2rem;
-        @media screen and (max-width: 990px) {
+        @media screen and (max-width: 1170px) {
           display: flex;
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
           figure {
             .image {
-              aspect-ratio: 4/5.5;
-              border-radius: 40%;
+              /* aspect-ratio: 4/5.5;
+              border-radius: 40%; */
             }
           }
         }
@@ -300,7 +300,7 @@ export const servicesDesignInfoWrappers: Record<
     },
     styles: css``,
   },
-  second : {
+  second: {
     designInfoGroupProps: {
       designInfosProps: [
         {

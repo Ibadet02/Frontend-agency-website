@@ -14,6 +14,13 @@ export const StyledInformationContent = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 4rem;
+        gap: 2rem;
+        text-align: center;
+        .aboutUs-image {
+            width: 18rem;
+            height: 18rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
     }
 `

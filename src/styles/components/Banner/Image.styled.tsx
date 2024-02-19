@@ -16,12 +16,13 @@ export const StyledImage = styled.figure<{
   $isCircle: boolean;
   $styles?: RuleSet<object>;
 }>`
-  
-  width: 15rem;
+  width: 25rem;
+  height: ${({ $isCircle }) => $isCircle && "25rem"};
   .image {
-    aspect-ratio: ${(props) => (props.$isCircle ? "1/1" : "4/3.5")};
+    /* aspect-ratio: ${(props) => (props.$isCircle ? "1/1" : "4/5.5")}; */
     width: 100%;
-    border-radius: ${(props) => (props.$isCircle ? "50%" : "40%")};
+    height: ${({ $isCircle }) => $isCircle && "100%"};
+    border-radius: ${(props) => (props.$isCircle ? "50%" : "1rem")};
     animation: ${fly} 3s ease-in-out infinite alternate;
     /* position: relative; */
   }

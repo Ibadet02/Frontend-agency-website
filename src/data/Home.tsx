@@ -1,7 +1,5 @@
 import { css } from "styled-components";
-import frontEndDev from "../assets/images/frontend-dev.jpg";
 import backEndDev from "../assets/images/backend-dev.jpg";
-import fullStackDev from "../assets/images/full_stack-dev.jpg";
 import ourTeam from "../assets/images/our-team.png";
 import webDesign from "../assets/images/web-design.png";
 import appDesign from "../assets/images/app-design.png";
@@ -25,7 +23,7 @@ export const homeBanners: Record<string, BannerProps> = {
   first: {
     styles: css`
       flex-direction: column;
-      gap: 1rem;
+      gap: 2rem;
       align-items: center;
       text-align: center;
     `,
@@ -62,13 +60,13 @@ export const homeBanners: Record<string, BannerProps> = {
     imageDemonstratorProps: {
       imagesProps: [
         {
-          src: frontEndDev,
+          src: backEndDev,
           alt: "FrontEnd Developer",
           id: 0,
           className: "img-1",
           isCircle: false,
           styles: css`
-            width: 15rem;
+            /* width: 15rem; */
           `,
         },
         {
@@ -78,27 +76,27 @@ export const homeBanners: Record<string, BannerProps> = {
           className: "img-2",
           isCircle: false,
           styles: css`
-            width: 15rem;
-            margin-top: 4rem;
+            /* width: 15rem; */
+            margin-top: 2rem;
           `,
         },
-        {
-          src: fullStackDev,
-          alt: "Full-Stack Developer",
-          id: 2,
-          className: "img-3",
-          isCircle: false,
-          styles: css`
-            width: 15rem;
-          `,
-        },
+        // {
+        //   src: fullStackDev,
+        //   alt: "Full-Stack Developer",
+        //   id: 2,
+        //   className: "img-3",
+        //   isCircle: false,
+        //   styles: css`
+        //     width: 15rem;
+        //   `,
+        // },
       ],
       styles: css`
         display: flex;
         justify-content: center;
         gap: 1rem;
         height: 100%;
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 850px) {
           display: none;
         }
       `,
@@ -109,7 +107,7 @@ export const homeBanners: Record<string, BannerProps> = {
       flex-direction: row-reverse;
       align-items: center;
       gap: 2rem;
-      @media screen and (max-width: 820px) {
+      @media screen and (max-width: 1215px) {
         flex-direction: column-reverse;
       }
     `,
@@ -119,7 +117,7 @@ export const homeBanners: Record<string, BannerProps> = {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        @media screen and (max-width: 820px) {
+        @media screen and (max-width: 1215px) {
           align-items: center;
           text-align: center;
         }
@@ -160,24 +158,24 @@ export const homeBanners: Record<string, BannerProps> = {
           auto
         ); /* Two rows with automatic height */
         gap: 1rem;
-        @media screen and (max-width: 540px) {
+        @media screen and (max-width: 700px) {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           figure {
-            width: 100%;
-            padding-inline: 3rem;
+            /* width: 100%; */
+            /* padding-inline: 3rem; */
             .image {
-              border-radius: 40%;
-              aspect-ratio: 4/5.5;
+              /* border-radius: 40%; */
+              /* aspect-ratio: 4/5.5; */
             }
           }
         }
       `,
       imagesProps: [
         {
-          src: frontEndDev,
+          src: backEndDev,
           alt: "Frontend Developer",
           id: 0,
           className: "image-1",
@@ -185,30 +183,32 @@ export const homeBanners: Record<string, BannerProps> = {
           styles: css`
             grid-column: 2; /* Starts at column 2 */
             grid-row: 1; /* Starts at row 1 */
+            width: 20rem;
           `,
         },
+        // {
+        //   src: backEndDev,
+        //   alt: "BackEnd Developer",
+        //   id: 1,
+        //   className: "image-2",
+        //   isCircle: true,
+        //   styles: css`
+        //     grid-column: 2; /* Starts at column 2 */
+        //     grid-row: 2; /* Starts at row 2 */
+        //   `,
+        // },
         {
           src: backEndDev,
-          alt: "BackEnd Developer",
-          id: 1,
-          className: "image-2",
-          isCircle: true,
-          styles: css`
-            grid-column: 2; /* Starts at column 2 */
-            grid-row: 2; /* Starts at row 2 */
-          `,
-        },
-        {
-          src: fullStackDev,
           alt: "FullStack Developer",
           id: 2,
           className: "image-3",
           isCircle: false,
           styles: css`
             grid-column: 1; /* Starts at column 1 */
-            grid-row: span 2; /* Spans 2 rows */
-            justify-self: right; /* Horizontally center the item within its grid cell */
-            place-self: center stretch;
+            grid-row: 2; /* Spans 2 rows */
+            /* justify-self: right; Horizontally center the item within its grid cell */
+            /* place-self: center stretch; */
+            width: 20rem;
           `,
         },
       ],
@@ -256,13 +256,18 @@ export const homeBanners: Record<string, BannerProps> = {
           grid-template-columns: repeat(2, 1fr);
           justify-items: center;
         }
-        @media screen and (max-width: 540px) {
+        @media screen and (max-width: 850px) {
           grid-template-columns: 1fr;
+        }
+        @media screen and (max-width: 440px) {
+          figure{
+            width: 100%;
+          }
         }
       `,
       imagesProps: [
         {
-          src: frontEndDev,
+          src: backEndDev,
           alt: "Frontend Developer",
           id: 0,
           className: "image-1",
@@ -307,52 +312,52 @@ export const homeBanners: Record<string, BannerProps> = {
             flex: 1;
           `,
         },
-        {
-          src: fullStackDev,
-          alt: "FullStack Developer",
-          id: 2,
-          className: "image-3",
-          imageCaptionProps: {
-            styles: css`
-              margin-top: 1rem;
-            `,
-            headingProps: {
-              text: "Sarah Jones",
-              styles: css``,
-            },
-            descriptionProps: {
-              text: "Sr. Product Designer",
-              styles: css``,
-            },
-          },
-          isCircle: false,
-          styles: css`
-            flex: 1;
-          `,
-        },
-        {
-          src: backEndDev,
-          alt: "BackEnd Developer",
-          id: 3,
-          className: "image-2",
-          imageCaptionProps: {
-            styles: css`
-              margin-top: 1rem;
-            `,
-            headingProps: {
-              text: "John Din",
-              styles: css``,
-            },
-            descriptionProps: {
-              text: "CEO",
-              styles: css``,
-            },
-          },
-          isCircle: false,
-          styles: css`
-            flex: 1;
-          `,
-        },
+        // {
+        //   src: fullStackDev,
+        //   alt: "FullStack Developer",
+        //   id: 2,
+        //   className: "image-3",
+        //   imageCaptionProps: {
+        //     styles: css`
+        //       margin-top: 1rem;
+        //     `,
+        //     headingProps: {
+        //       text: "Sarah Jones",
+        //       styles: css``,
+        //     },
+        //     descriptionProps: {
+        //       text: "Sr. Product Designer",
+        //       styles: css``,
+        //     },
+        //   },
+        //   isCircle: false,
+        //   styles: css`
+        //     flex: 1;
+        //   `,
+        // },
+        // {
+        //   src: backEndDev,
+        //   alt: "BackEnd Developer",
+        //   id: 3,
+        //   className: "image-2",
+        //   imageCaptionProps: {
+        //     styles: css`
+        //       margin-top: 1rem;
+        //     `,
+        //     headingProps: {
+        //       text: "John Din",
+        //       styles: css``,
+        //     },
+        //     descriptionProps: {
+        //       text: "CEO",
+        //       styles: css``,
+        //     },
+        //   },
+        //   isCircle: false,
+        //   styles: css`
+        //     flex: 1;
+        //   `,
+        // },
       ],
     },
   },
