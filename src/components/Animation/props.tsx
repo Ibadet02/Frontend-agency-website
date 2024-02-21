@@ -1,10 +1,10 @@
 export interface RevealProps {
-    children: React.ReactNode;
-    width?: 'fit-content' | '100%';
-    withSlide?: boolean;
+  children: React.ReactNode;
+  width?: "fit-content" | "100%";
+  withSlide?: boolean;
 }
 
 export interface TypeEffectProps {
-    children: React.ReactNode;
-    letterCount: number;
+  children: React.ReactNode;
+  letterCount: number;
 }

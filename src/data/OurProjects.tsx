@@ -7,6 +7,7 @@ import typoDesign from "../assets/images/typo-design.png";
 import { DesignInfoWrapperProps } from "../components/props";
 import { BannerProps } from "../components/Banner/props";
 import { PortfolioProps } from "../pages/Home/props";
+import { designİnfo_imageDemonstrator_flexBasis } from "./utils/generateData";
 
 export const ourProjectsDesignInfoWrappers: Record<
   string,
@@ -32,6 +33,7 @@ export const ourProjectsDesignInfoWrappers: Record<
         styles: css``,
       },
     },
+    flexDirection: "row"
   },
   second: {
     styles: css`
@@ -154,6 +156,7 @@ export const ourProjectsDesignInfoWrappers: Record<
           `,
         },
       ],
+      flexBasis: 'auto',
       styles: css`
         display: flex;
         justify-content: space-between;
@@ -164,8 +167,10 @@ export const ourProjectsDesignInfoWrappers: Record<
         }
       `,
     },
+    flexDirection: "column",
   },
 };
+const firstBannerFlexDirection = "column";
 
 export const ourProjectsBanners: Record<string, BannerProps> = {
   first: {
@@ -251,6 +256,7 @@ export const ourProjectsBanners: Record<string, BannerProps> = {
           `,
         },
       ],
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(firstBannerFlexDirection),
       styles: css`
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -262,6 +268,7 @@ export const ourProjectsBanners: Record<string, BannerProps> = {
         }
       `,
     },
+    flexDirection: firstBannerFlexDirection,
   },
 };
 

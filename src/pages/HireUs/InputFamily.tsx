@@ -1,4 +1,4 @@
-import { StyledInputFamily } from "../../styles/HireUs/InputFamily.styled";
+import { StyledInputFamily } from "../../styles/pages/HireUs/InputFamily.styled";
 import InputGroup from "./InputGroup";
 import { InputFamilyProps } from "./props";
 

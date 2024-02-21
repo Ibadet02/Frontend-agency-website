@@ -15,7 +15,7 @@ const InfoImage: React.FC<InfoImageProps> = ({
 }) => {
   return (
     <Reveal>
-      <StyledInfoImage $styles={styles}>
+      <StyledInfoImage className="infoImage" $styles={styles}>
         {img && <img src={img.src} alt={img.alt} />}
         {smallHeadingProps && <SmallHeading {...smallHeadingProps} />}
         {}

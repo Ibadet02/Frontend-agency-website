@@ -1,30 +1,28 @@
 import { css } from "styled-components";
-import { DesignInfoWrapperProps } from "../components/props";
+import { DesignInfoProps } from "../components/props";
 import { HireUsFormProps } from "../pages/HireUs/props";
 
-export const hireUsDesignInfoWrappers: Record<string, DesignInfoWrapperProps> =
-  {
-    first: {
-      designInfoProps: {
-        styles: css`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        `,
-        contentHeadingProps: {
-          tagName: "h2",
-          children: "Let's get in touch!",
-          styles: css`
-            font-size: 3rem;
-          `,
-        },
-        descriptionProps: {
-          text: "we can help you to build your dream website and app.",
-          styles: css``,
-        },
-      },
+export const hireUsDesignInfoProps: Record<string, DesignInfoProps> = {
+  first: {
+    styles: css`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    `,
+    contentHeadingProps: {
+      tagName: "h2",
+      children: "Let's get in touch!",
+      styles: css`
+        font-size: 3rem;
+      `,
     },
-  };
+    descriptionProps: {
+      text: "we can help you to build your dream website and app.",
+      styles: css``,
+    },
+    flexBasis: "auto",
+  },
+};
 
 export const hireUsForm: HireUsFormProps = {
   firstInputFamily: {

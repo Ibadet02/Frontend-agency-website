@@ -6,7 +6,7 @@ import star from "../assets/icons/star.svg";
 const stars = new Array(5).fill(star);
 const Rating: React.FC<RatingProps> = ({}) => {
   return (
-    <StyledRating>
+    <StyledRating className="rating">
       {stars.map((icon, index) => {
         return <img key={index} src={icon} alt="" />;
       })}

@@ -3,10 +3,11 @@ import { StyledImageDemonstrator } from "../../styles/components/Banner/ImageDem
 import { ImageDemonstratorProps } from "./props";
 const ImageDemonstrator: React.FC<ImageDemonstratorProps> = ({
   imagesProps,
+  flexBasis,
   styles,
 }) => {
   return (
-    <StyledImageDemonstrator $styles={styles}>
+    <StyledImageDemonstrator className="imageDemonstrator" $styles={styles} $flexBasis={flexBasis}>
       {imagesProps.map((imageProps) => {
         return <Image key={imageProps.id} {...imageProps} />;
       })}

@@ -18,10 +18,11 @@ const DesignInfo: React.FC<DesignInfoProps> = ({
   descriptionProps,
   actionLinkProps,
   doesInputExist,
+  flexBasis,
   styles,
 }) => {
   return (
-    <StyledDesignInfo $styles={styles}>
+    <StyledDesignInfo className="designInfo" $styles={styles} $flexBasis={flexBasis}>
       {numberedOrderProps && <NumberedOrder {...numberedOrderProps} />}
       {img && (
         <Reveal>

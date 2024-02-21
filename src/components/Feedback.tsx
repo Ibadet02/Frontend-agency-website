@@ -15,7 +15,7 @@ const Feedback: React.FC<FeedbackProps> = ({
   ratingProps,
 }) => {
   return (
-    <StyledFeedback>
+    <StyledFeedback className="feedback">
       <NumberedOrder {...numberedOrderProps} />
       <MainDescription {...description1Props} />
       <img src={img.src} alt={img.alt} className="feedback-img" />

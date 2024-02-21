@@ -11,6 +11,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleRight } from "@fortawesome/free-regular-svg-icons";
 import { BannerProps } from "../components/Banner/props";
 import { DesignInfoWrapperProps } from "../components/props";
+import { designİnfo_imageDemonstrator_flexBasis } from "./utils/generateData";
+const firstBannerFlexDirection = "row";
 export const whatWeDoBanners: Record<string, BannerProps> = {
   first: {
     styles: css`
@@ -49,6 +51,9 @@ export const whatWeDoBanners: Record<string, BannerProps> = {
         path: "/hire-us",
         icon: <FontAwesomeIcon icon={faCircleRight} />,
       },
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        firstBannerFlexDirection
+      ),
     },
     imageDemonstratorProps: {
       imagesProps: [
@@ -157,6 +162,9 @@ export const whatWeDoBanners: Record<string, BannerProps> = {
           `,
         },
       ],
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        firstBannerFlexDirection
+      ),
       styles: css`
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -178,9 +186,10 @@ export const whatWeDoBanners: Record<string, BannerProps> = {
         }
       `,
     },
+    flexDirection: firstBannerFlexDirection,
   },
 };
-
+const secondDesignInfoWrapperFlexDirection = "row";
 export const whatWeDoDesignInfoWrappers: Record<
   string,
   DesignInfoWrapperProps
@@ -317,6 +326,7 @@ export const whatWeDoDesignInfoWrappers: Record<
           },
         },
       ],
+      flexBasis: 'auto',
     },
     designInfoProps: {
       styles: css`
@@ -338,6 +348,7 @@ export const whatWeDoDesignInfoWrappers: Record<
         `,
       },
     },
+    flexDirection: 'row',
   },
   second: {
     styles: css`
@@ -351,7 +362,6 @@ export const whatWeDoDesignInfoWrappers: Record<
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        flex-basis: 50%;
       `,
       designInfosProps: [
         {
@@ -369,17 +379,18 @@ export const whatWeDoDesignInfoWrappers: Record<
             `,
             tagName: "h3",
             to: "/",
-            children: "+26 years experience",
+            children: "Passionate Team",
           },
           descriptionProps: {
             styles: css`
               grid-column: 2;
               grid-row: 2;
             `,
-            text: "We have been in the industry for 26 years and have ",
+            text: "All the core of our work lies our passion, driving us to push boundaries and elevate your online presence to a new level.",
           },
           styles: css`
             display: grid;
+            grid-template-columns: auto 1fr;
             gap: 0.5rem;
           `,
         },
@@ -404,10 +415,11 @@ export const whatWeDoDesignInfoWrappers: Record<
             styles: css`
               grid-column: 2;
             `,
-            text: "We are the create team that brings your ideas to life.",
+            text: "Creativity is our compass, guiding us to design digital masterpieces that captivate and inspire your audience.",
           },
           styles: css`
             display: grid;
+            grid-template-columns: auto 1fr;
             gap: 0.5rem;
           `,
         },
@@ -418,7 +430,7 @@ export const whatWeDoDesignInfoWrappers: Record<
               grid-column: 1;
               justify-self: end;
             `,
-            numberContent: "02",
+            numberContent: "03",
           },
           contentHeadingProps: {
             styles: css`
@@ -432,18 +444,21 @@ export const whatWeDoDesignInfoWrappers: Record<
             styles: css`
               grid-column: 2;
             `,
-            text: "We love to help clients to achieve their online goals.",
+            text: "Our mission is to make you succeed. We mean that.",
           },
           styles: css`
             display: grid;
+            grid-template-columns: auto 1fr;
             gap: 0.5rem;
           `,
         },
       ],
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        secondDesignInfoWrapperFlexDirection
+      ),
     },
     designInfoProps: {
       styles: css`
-        flex: 1;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -462,13 +477,13 @@ export const whatWeDoDesignInfoWrappers: Record<
       contentHeadingProps: {
         tagName: "h2",
         to: "/",
-        children: "Experienced, Creative, and Helpful",
+        children: "Passionate, Creative, and Helpful",
         styles: css`
           font-size: 2rem;
         `,
       },
       descriptionProps: {
-        text: "We have been in the industry for 26 years and have succesfully launched over 800 websites and 150 mobile applications.",
+        text: "We are a passionate team of young web developers dedicated to creating meaningful online experiences, driven by our love for innovation and genuine commitment to our clients' success.",
         styles: css``,
       },
       actionLinkProps: {
@@ -477,6 +492,10 @@ export const whatWeDoDesignInfoWrappers: Record<
         icon: "",
         styles: css``,
       },
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        secondDesignInfoWrapperFlexDirection
+      ),
     },
+    flexDirection: secondDesignInfoWrapperFlexDirection,
   },
 };

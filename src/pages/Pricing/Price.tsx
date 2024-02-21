@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledPrice } from "../../styles/Pricing/Price.styled";
+import { StyledPrice } from "../../styles/pages/Pricing/Price.styled";
 import { PriceProps } from "./props";
 import SmallHeading from "../../components/SmallHeading";
 import Heading from "../../components/Heading";

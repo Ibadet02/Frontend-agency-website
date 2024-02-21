@@ -1,16 +1,19 @@
-import DesignInfoWrapper from "../../components/DesignInfoWrapper";
-import { StyledHireUs } from "../../styles/HireUs/index.styled";
-import { hireUsDesignInfoWrappers, hireUsForm } from "../../data/HireUs";
+import { hireUsDesignInfoProps, hireUsForm } from "../../data/HireUs";
 import HireUsForm from "./HireUsForm";
+import { StyledPage } from "../../styles/pages/index.styled";
+import { StyledSection } from "../../styles/pages/Section.styled";
+import DesignInfo from "../../components/DesignInfo";
 
-const { first: firstDesignInfoWrapperProps } = hireUsDesignInfoWrappers;
+const { first: firstDesignInfoProps } = hireUsDesignInfoProps;
 
 const HireUs = () => {
   return (
-    <StyledHireUs>
-      <DesignInfoWrapper {...firstDesignInfoWrapperProps} />
+    <StyledPage>
+      <StyledSection>
+        <DesignInfo {...firstDesignInfoProps} />
+      </StyledSection>
       <HireUsForm {...hireUsForm} />
-    </StyledHireUs>
+    </StyledPage>
   );
 };
 

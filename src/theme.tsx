@@ -33,12 +33,15 @@ export const themeData = {
 export const theme = {
   isDarkMode: true,
   bodyOverflow: "auto",
-  contentStyles : css`
+  contentStyles: css`
+    display: flex;
+    /* align-items: center; */
+    gap: 2rem;
     width: 75rem;
     padding-inline: 1rem;
-    @media screen and (max-width: 1200px){
+    @media screen and (max-width: 1200px) {
       width: 100%;
-    } 
+    }
   `,
   breakpoints: {
     mobile: "0px",
@@ -150,7 +153,6 @@ export const theme = {
   heights: {
     navbar: "4.5rem",
   },
-  
 };
 
 export type Theme = typeof theme;

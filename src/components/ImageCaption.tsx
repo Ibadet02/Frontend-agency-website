@@ -10,7 +10,7 @@ const ImageCaption: React.FC<ImageCaptionProps> = ({
   styles,
 }) => {
   return (
-    <StyledImageCaption $styles={styles}>
+    <StyledImageCaption className="imageCaption" $styles={styles}>
       <div className="caption-text">
         <Heading {...headingProps} />
         <MainDescription {...descriptionProps} />

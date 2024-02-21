@@ -1,51 +1,44 @@
 import { css } from "styled-components";
 import { PriceGroupProps } from "../pages/Pricing/props";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { DesignInfoWrapperProps } from "../components/props";
-
-export const pricingDesignInfoWrappers: Record<string, DesignInfoWrapperProps> =
-  {
-    first: {
-      designInfoProps: {
-        styles: css`
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        `,
-        contentHeadingProps: {
-          tagName: "h2",
-          children: "Pricing",
-          styles: css`
-            font-size: 3rem;
-          `,
-        },
-        descriptionProps: {
-          text: "Please note that the prices can change every 6 months.",
-          styles: css``,
-        },
-      },
+import { DesignInfoProps } from "../components/props";
+export const pricingDesignInfoProps: Record<string, DesignInfoProps> = {
+  first: {
+    styles: css`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    `,
+    contentHeadingProps: {
+      tagName: "h2",
+      children: "Pricing",
+      styles: css`
+        font-size: 3rem;
+      `,
     },
-    second: {
-      designInfoProps: {
-        styles: css`
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        `,
-        smallHeadingProps: {
-          text: "Quick answers",
-        },
-        contentHeadingProps: {
-          tagName: "h2",
-          children: "Frequently Asked Questions",
-          styles: css``,
-        },
-      },
+    descriptionProps: {
+      text: "Please note that the prices can change every 6 months.",
+      styles: css``,
     },
-  };
-
+    flexBasis: "auto",
+  },
+  second: {
+    styles: css`
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    `,
+    smallHeadingProps: {
+      text: "Quick answers",
+    },
+    contentHeadingProps: {
+      tagName: "h2",
+      children: "Frequently Asked Questions",
+      styles: css``,
+    },
+    flexBasis: "auto",
+  },
+};
 export const priceGroupProps: PriceGroupProps = {
   pricesProps: [
     {

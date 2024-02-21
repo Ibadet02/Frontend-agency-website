@@ -1,20 +1,29 @@
-import { StyledPricing } from "../../styles/Pricing/index.styled";
-import DesignInfoWrapper from "../../components/DesignInfoWrapper";
-import { pricingDesignInfoWrappers, priceGroupProps } from "../../data/Pricing";
+import { pricingDesignInfoProps, priceGroupProps } from "../../data/Pricing";
 import PriceGroup from "./PriceGroup";
 import FAQ from "./FAQ";
-const {
-  first: firstDesignInfoWrapperProps,
-  second: secondDesignInfoWrapperProps,
-} = pricingDesignInfoWrappers;
+import { StyledPage } from "../../styles/pages/index.styled";
+import { StyledSection } from "../../styles/pages/Section.styled";
+import DesignInfo from "../../components/DesignInfo";
+
+const { first: firstDesignInfoProps, second: secondDesignInfoProps } =
+  pricingDesignInfoProps;
+
 const Pricing = () => {
   return (
-    <StyledPricing>
-      <DesignInfoWrapper {...firstDesignInfoWrapperProps} />
-      <PriceGroup {...priceGroupProps} />
-      <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
-      <FAQ />
-    </StyledPricing>
+    <StyledPage>
+      <StyledSection>
+        <DesignInfo {...firstDesignInfoProps} />
+      </StyledSection>
+      <StyledSection>
+        <PriceGroup {...priceGroupProps} />
+      </StyledSection>
+      <StyledSection>
+        <DesignInfo {...secondDesignInfoProps} />
+      </StyledSection>
+      <StyledSection>
+        <FAQ />
+      </StyledSection>
+    </StyledPage>
   );
 };
 

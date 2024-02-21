@@ -47,7 +47,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isBottomBarOpen, isMobile]);
   return (
-    <StyledNavbar className={`${isNavbarVisible ? "visible" : "hidden"}`}>
+    <StyledNavbar className={`navbar ${isNavbarVisible ? "visible" : "hidden"}`}>
       {renderNavbar()}
     </StyledNavbar>
   );

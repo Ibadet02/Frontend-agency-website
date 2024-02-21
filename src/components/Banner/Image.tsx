@@ -19,7 +19,7 @@ const Image: React.FC<ImageProps> = ({
     }
   };
   return (
-    <StyledImage $isCircle={isCircle} $styles={styles}>
+    <StyledImage className="image" $isCircle={isCircle} $styles={styles}>
       {/* <Reveal> */}
         <img title={alt} src={src} alt={alt} className={`image ${className}`} />
         {generateFigCaption()}

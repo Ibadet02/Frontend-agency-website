@@ -1,8 +1,8 @@
 import React from "react";
-import { StyledAccordion } from "../../styles/Pricing/Accordion.styled";
+import { StyledAccordion } from "../../styles/pages/Pricing/Accordion.styled";
 import { AccordionProps } from "./props";
-import { StyledAnswer } from "../../styles/Pricing/Answer.styled";
-import { StyledQuestion } from "../../styles/Pricing/Question.styled";
+import { StyledAnswer } from "../../styles/pages/Pricing/Answer.styled";
+import { StyledQuestion } from "../../styles/pages/Pricing/Question.styled";
 
 const Accordion: React.FC<AccordionProps> = ({
   heading,

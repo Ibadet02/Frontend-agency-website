@@ -21,7 +21,7 @@ export const StyledBottomBar = styled.div<{ theme: Theme }>`
     align-items: center;
     a {
       flex: 1;
-      padding-block: 1.5rem;
+      padding-block: 1.2rem;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -30,6 +30,7 @@ export const StyledBottomBar = styled.div<{ theme: Theme }>`
       color: ${({ theme }) => theme.colors().mainLink()};
       transition: color ${({ theme }) => theme.transitions.changeMode};
       font-size: 1.5rem;
+      font-weight: 550;
       &:hover {
         color: ${({ theme }) => theme.colors().mainLinkHover()};
       }

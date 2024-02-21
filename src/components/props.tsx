@@ -34,6 +34,7 @@ export interface DesignInfoProps {
     src: string;
     alt: string;
   };
+  flexBasis?: "50%" | "auto";
   numberedOrderProps?: NumberedOrderProps;
   smallHeadingProps?: SmallHeadingProps;
   contentHeadingProps: ContentHeadingProps;
@@ -46,11 +47,12 @@ export interface DesignInfoProps {
 export interface DesignInfoWrapperProps {
   designInfoGroupProps?: DesignInfoGroupProps;
   designInfoProps?: DesignInfoProps;
+  flexDirection: string;
   styles?: RuleSet<object>;
 }
-export type DesignInfoWrapperContentProps = DesignInfoWrapperProps;
 export interface DesignInfoGroupProps {
   designInfosProps: DesignInfoProps[];
+  flexBasis: "50%" | "auto";
   styles?: RuleSet<object>;
 }
 export interface HeadingProps {
@@ -113,13 +115,11 @@ export interface FeedbackGroupProps {
   styles?: RuleSet<object>;
 }
 
-export interface FeedbacksContentProps {
+export interface FeedbacksProps {
   feedbacksControllerProps: FeedbacksControllerProps;
   feedbackGroupProps: FeedbackGroupProps;
   styles?: RuleSet<object>;
-};
-
-export type FeedbacksProps = FeedbacksContentProps;
+}
 
 export interface MainButtonProps {
   text: string;

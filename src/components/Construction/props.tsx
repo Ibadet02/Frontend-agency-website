@@ -1,5 +1,3 @@
-export interface ConstructionContentProps {
+export interface ConstructionProps {
   text: string;
 }
-
-export type ConstructionProps = ConstructionContentProps;

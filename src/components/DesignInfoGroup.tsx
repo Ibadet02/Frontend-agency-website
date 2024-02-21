@@ -5,10 +5,11 @@ import DesignInfo from "./DesignInfo";
 
 const DesignInfoGroup: React.FC<DesignInfoGroupProps> = ({
   designInfosProps,
+  flexBasis,
   styles,
 }) => {
   return (
-    <StyledDesignInfoGroup $styles={styles}>
+    <StyledDesignInfoGroup className="designInfoGroup" $styles={styles} $flexBasis={flexBasis}>
       {designInfosProps.map((designInfoProps) => {
         return <DesignInfo key={designInfoProps.id} {...designInfoProps} />;
       })}

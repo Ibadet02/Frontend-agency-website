@@ -1,4 +1,4 @@
-import { StyledTextInputLabel } from "../../styles/HireUs/TextInputLabel.styled";
+import { StyledTextInputLabel } from "../../styles/pages/HireUs/TextInputLabel.styled";
 import { TextInputLabelProps } from "./props";
 
 const TextInputLabel: React.FC<TextInputLabelProps> = ({

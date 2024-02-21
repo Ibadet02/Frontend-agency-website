@@ -5,7 +5,7 @@ import Task from "./Task";
 
 const TaskGroup: React.FC<TaskGroupProps> = ({ tasksProps }) => {
   return (
-    <StyledTaskGroup>
+    <StyledTaskGroup className="taskGroup">
       {tasksProps.map((taskProp) => {
         return <Task key={taskProp.id} {...taskProp} />;
       })}

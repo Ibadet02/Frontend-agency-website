@@ -1,14 +1,8 @@
-import { StyledHome } from "../../styles/Home/index.styled";
 import Banner from "../../components/Banner";
 import DesignInfoWrapper from "../../components/DesignInfoWrapper";
-import {
-  homeBanners,
-  homeDesignInfoWrappers,
-  // portfolio as portfolioProps,
-} from "../../data/Home";
-// import Portfolio from "./Portfolio";
-// import Feedbacks from "../../components/Feedbacks";
-// import { feedbacks as feedbacksProps } from "../../data/components/Feedbacks";
+import { homeBanners, homeDesignInfoWrappers } from "../../data/Home";
+import { StyledSection } from "../../styles/pages/Section.styled";
+import { StyledPage } from "../../styles/pages/index.styled";
 
 const {
   first: firstBannerProps,
@@ -22,15 +16,23 @@ const {
 
 const Home = () => {
   return (
-    <StyledHome>
-      <Banner {...firstBannerProps} />
-      <DesignInfoWrapper {...firstDesignInfoWrapperProps} />
-      <Banner {...secondBannerProps} />
-      <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
-      {/* <Portfolio {...portfolioProps} /> */}
-      <Banner {...thirdBannerProps} />
-      {/* <Feedbacks {...feedbacksProps} /> */}
-    </StyledHome>
+    <StyledPage>
+      <StyledSection>
+        <Banner {...firstBannerProps} />
+      </StyledSection>
+      <StyledSection>
+        <DesignInfoWrapper {...firstDesignInfoWrapperProps} />
+      </StyledSection>
+      <StyledSection>
+        <Banner {...secondBannerProps} />
+      </StyledSection>
+      <StyledSection>
+        <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
+      </StyledSection>
+      <StyledSection>
+        <Banner {...thirdBannerProps} />
+      </StyledSection>
+    </StyledPage>
   );
 };
 

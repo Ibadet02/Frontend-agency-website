@@ -8,7 +8,7 @@ const FeedbackGroup: React.FC<FeedbackGroupProps> = ({
   styles,
 }) => {
   return (
-    <StyledFeedbackGroup $styles={styles}>
+    <StyledFeedbackGroup className="feedbackGroup" $styles={styles}>
       {feedbacksProps.map((feedbackProps) => {
         return <Feedback key={feedbackProps.id} {...feedbackProps} />;
       })}

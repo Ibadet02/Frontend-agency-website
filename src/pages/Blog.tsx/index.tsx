@@ -1,7 +1,7 @@
-import { StyledBlog } from "../../styles/Blog/index.styled";
+import { StyledPage } from "../../styles/pages/index.styled";
 
 const Blog = () => {
-  return <StyledBlog></StyledBlog>;
+  return <StyledPage></StyledPage>;
 };
 
 export default Blog;

@@ -1,4 +1,3 @@
-import { StyledOurProjects } from "../../styles/OurProjects/index.styled";
 // import DesignInfoWrapper from "../../components/DesignInfoWrapper";
 // import {
 //   ourProjectsDesignInfoWrappers,
@@ -8,7 +7,9 @@ import { StyledOurProjects } from "../../styles/OurProjects/index.styled";
 // import { DesignInfoWrapperProps } from "../../components/props";
 // import Banner from "../../components/Banner";
 // import Portfolio from "../Home/Portfolio";
-import Construction from "../../components/Construction";
+import Construction from "../../components/Construction/index";
+import { StyledSection } from "../../styles/pages/Section.styled";
+import { StyledPage } from "../../styles/pages/index.styled";
 
 // const {
 //   first: firstDesignInfoWrapperProps,
@@ -19,7 +20,7 @@ import Construction from "../../components/Construction";
 //   ourProjectsPortfolio;
 const OurProjects = () => {
   return (
-    <StyledOurProjects>
+    <StyledPage>
       {/* <DesignInfoWrapper
         {...(firstDesignInfoWrapperProps as DesignInfoWrapperProps)}
       />
@@ -27,8 +28,10 @@ const OurProjects = () => {
       <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
       <Portfolio {...firstPortfolioProps} />
       <Portfolio {...secondPortfolioProps} /> */}
-      <Construction text="Caution! This page is under construction. We're adding more zeros to our code to make it 1000% better. It's a math thing, you wouldn't understand" />
-    </StyledOurProjects>
+      <StyledSection>
+        <Construction text="Caution! This page is under construction. We're adding more zeros to our code to make it 1000% better. It's a math thing, you wouldn't understand" />
+      </StyledSection>
+    </StyledPage>
   );
 };
 

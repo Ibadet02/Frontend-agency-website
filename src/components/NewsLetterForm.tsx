@@ -48,7 +48,7 @@ const NewsLetterForm = () => {
     }
   };
   return (
-    <StyledNewsLetterForm onSubmit={handleSubmit}>
+    <StyledNewsLetterForm className="newsLetterForm" onSubmit={handleSubmit}>
       <label htmlFor="">
         <input
           type="email"

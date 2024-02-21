@@ -1,12 +1,19 @@
 import React from "react";
-import { StyledFeedbacks } from "../styles/components/Feedbacks.styled";
-import FeedbacksContent from "./FeedbacksContent";
+// import { StyledFeedbacks } from "../styles/components/Feedbacks.styled";
+import FeedbackController from "./FeedbacksController";
+import FeedbackGroup from "./FeedbackGroup";
 import { FeedbacksProps } from "./props";
+import { StyledFeedbacks } from "../styles/components/Feedbacks.styled";
 
-const Feedbacks: React.FC<FeedbacksProps> = (feedbacksContentProps) => {
+const Feedbacks: React.FC<FeedbacksProps> = ({
+  feedbacksControllerProps,
+  feedbackGroupProps,
+  styles,
+}) => {
   return (
-    <StyledFeedbacks>
-      <FeedbacksContent {...feedbacksContentProps} />
+    <StyledFeedbacks className="feedbacks" $styles={styles}>
+      <FeedbackController {...feedbacksControllerProps} />
+      <FeedbackGroup {...feedbackGroupProps} />
     </StyledFeedbacks>
   );
 };

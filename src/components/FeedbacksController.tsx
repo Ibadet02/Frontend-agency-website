@@ -12,7 +12,7 @@ const FeedbacksController: React.FC<FeedbacksControllerProps> = ({
   styles,
 }) => {
   return (
-    <StyledFeedbacksController $styles={styles}>
+    <StyledFeedbacksController className="feedbacksController" $styles={styles}>
       <img src={img.src} alt={img.alt} />
       <SmallHeading {...smallHeadingProps} />
       <ContentHeading {...contentHeadingProps} />

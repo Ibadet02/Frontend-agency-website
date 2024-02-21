@@ -1,4 +1,4 @@
-import { StyledInputGroup } from "../../styles/HireUs/InputGroup.styled";
+import { StyledInputGroup } from "../../styles/pages/HireUs/InputGroup.styled";
 import TickInputLabel from "./TickInputLabel";
 import { InputGroupProps } from "./props";
 

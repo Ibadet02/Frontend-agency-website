@@ -13,13 +13,13 @@ export interface ImageProps {
 
 export interface ImageDemonstratorProps {
   imagesProps: ImageProps[];
+  flexBasis: "50%" | "auto";
   styles?: RuleSet<object>;
 }
 
 export interface BannerProps {
   imageDemonstratorProps?: ImageDemonstratorProps;
   designInfoProps: DesignInfoProps;
+  flexDirection: string;
   styles?: RuleSet<object>;
 }
-
-export type BannerContentProps = BannerProps;

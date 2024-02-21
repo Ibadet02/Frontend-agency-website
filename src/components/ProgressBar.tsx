@@ -23,7 +23,7 @@ const ProgressBar = () => {
   }, []);
 
   return (
-    <StyledProgressBar id="PreLoaderBar" ref={preLoaderRef}>
+    <StyledProgressBar className="progressBar" id="PreLoaderBar" ref={preLoaderRef}>
       <div className="indeterminate" />
     </StyledProgressBar>
   );

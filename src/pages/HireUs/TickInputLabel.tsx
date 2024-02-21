@@ -1,4 +1,4 @@
-import { StyledTickInputLabel } from "../../styles/HireUs/TickInputLabel.styled";
+import { StyledTickInputLabel } from "../../styles/pages/HireUs/TickInputLabel.styled";
 import { TickInputLabelProps } from "./props";
 
 const TickInputLabel: React.FC<TickInputLabelProps> = ({

@@ -1,16 +1,17 @@
 import { css } from "styled-components";
 import backEndDev from "../assets/images/backend-dev.jpg";
-import { DesignInfoWrapperProps } from "../components/props";
+import ibadet from "../assets/images/ibadet.jpg";
+import { DesignInfoGroupProps, DesignInfoWrapperProps } from "../components/props";
 import { BannerProps } from "../components/Banner/props";
 import webDesign from "../assets/images/web-design.png";
 import appDesign from "../assets/images/app-design.png";
 import uiUxDesign from "../assets/images/ui-ux-design.png";
-import brandDesign from "../assets/images/brand-design.png";
+import { designİnfo_imageDemonstrator_flexBasis } from "./utils/generateData";
 
+const firstBannerFlexDirection = "row";
 export const servicesBanners: Record<string, BannerProps> = {
   first: {
     styles: css`
-      gap: 2rem;
       @media screen and (max-width: 1170px) {
         flex-direction: column;
         text-align: center;
@@ -34,11 +35,11 @@ export const servicesBanners: Record<string, BannerProps> = {
           font-size: 3rem;
         `,
         tagName: "h1",
-        children: "We make strategic design and technology solutions",
+        children: "We make sure your online presence is on point",
       },
       descriptionProps: {
         styles: css``,
-        text: "proper business solutions for your business strategy and corporation.",
+        text: "Look below to see how",
       },
       actionLinkProps: {
         styles: css``,
@@ -46,6 +47,9 @@ export const servicesBanners: Record<string, BannerProps> = {
         path: "/hire-us",
         icon: "",
       },
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        firstBannerFlexDirection
+      ),
     },
     imageDemonstratorProps: {
       imagesProps: [
@@ -68,18 +72,17 @@ export const servicesBanners: Record<string, BannerProps> = {
               }
             `,
             headingProps: {
-              text: "David Snow",
+              text: "Robert",
               styles: css`
                 color: #000;
               `,
             },
             descriptionProps: {
-              text: "Graphic Designer",
+              text: "CEO & Founder",
             },
           },
           styles: css`
             grid-column: 1;
-            width: 20rem;
             position: relative;
           `,
         },
@@ -118,7 +121,7 @@ export const servicesBanners: Record<string, BannerProps> = {
         //   `,
         // },
         {
-          src: backEndDev,
+          src: ibadet,
           alt: "FullStack Developer",
           id: 2,
           className: "image-3",
@@ -136,13 +139,13 @@ export const servicesBanners: Record<string, BannerProps> = {
               }
             `,
             headingProps: {
-              text: "James Doe",
+              text: "Ibadet Ismayilov",
               styles: css`
                 color: #000;
               `,
             },
             descriptionProps: {
-              text: "Sr. FullStack Developer",
+              text: "Frontend Developer",
             },
           },
           styles: css`
@@ -151,14 +154,15 @@ export const servicesBanners: Record<string, BannerProps> = {
             grid-row: 2; /* Spans 2 rows */
             /* justify-self: center; Horizontally center the item within its grid cell */
             /* place-self: center stretch; */
-            width: 20rem;
             position: relative;
           `,
         },
       ],
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        firstBannerFlexDirection
+      ),
       styles: css`
         display: grid;
-        grid-template-columns: 1fr 3fr;
         gap: 2rem;
         @media screen and (max-width: 1170px) {
           display: flex;
@@ -174,133 +178,134 @@ export const servicesBanners: Record<string, BannerProps> = {
         }
       `,
     },
+    flexDirection: firstBannerFlexDirection,
   },
 };
+export const servicesDesignInfoGroups: Record<string, DesignInfoGroupProps> = {
+  first: {
+    designInfosProps: [
+      {
+        styles: css`
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 0.5rem;
+        `,
+        smallHeadingProps: {
+          text: "Strategy",
+        },
+        contentHeadingProps: {
+          tagName: "h3",
+          children: "Fullstack enterprise media management",
+          styles: css`
+            font-size: 1.5rem;
+          `,
+        },
+        descriptionProps: {
+          text: "Regulatory compliance, data security, and data privacy are the foundation of our platform. We are committed to providing a secure and compliant platform that you can trust.",
+          styles: css``,
+        },
+        id: 0,
+      },
+      {
+        styles: css`
+          flex: 1;
 
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 0.5rem;
+        `,
+        smallHeadingProps: {
+          text: "Design",
+        },
+        contentHeadingProps: {
+          tagName: "h3",
+          children: "UX/UI Design & Website & App design",
+          styles: css`
+            font-size: 1.5rem;
+          `,
+        },
+        descriptionProps: {
+          text: "higher spacing and movements through an impactful visual hierarchy. We create a design that is not only visually appealing but also functional and user-friendly.",
+          styles: css``,
+        },
+        id: 1,
+      },
+      {
+        styles: css`
+          flex: 1;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 0.5rem;
+        `,
+        smallHeadingProps: {
+          text: "Marketing",
+        },
+        contentHeadingProps: {
+          tagName: "h3",
+          children: "Marketing campaigns & Content creation",
+          styles: css`
+            font-size: 1.5rem;
+          `,
+        },
+        descriptionProps: {
+          text: "Making a short time marketing campaign and content creation for your business.",
+          styles: css``,
+        },
+        id: 2,
+      },
+      {
+        styles: css`
+          flex: 1;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 0.5rem;
+        `,
+        smallHeadingProps: {
+          text: "Campaigns",
+        },
+        contentHeadingProps: {
+          tagName: "h3",
+          children: "Google analytics & measurement",
+          styles: css`
+            font-size: 1.5rem;
+          `,
+        },
+        descriptionProps: {
+          text: "Spaces of each debt in the digital world can help you with overall simplest authentic.",
+          styles: css``,
+        },
+        id: 3,
+      },
+    ],
+    flexBasis: 'auto',
+    styles: css`
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      /* flex-wrap: wrap; */
+      @media screen and (max-width: 820px) {
+        flex-wrap: wrap;
+      }
+    `,
+  }
+}
+const secondDesignInfoWrapperFlexDirection = "row";
 export const servicesDesignInfoWrappers: Record<
   string,
   DesignInfoWrapperProps
 > = {
   first: {
-    designInfoGroupProps: {
-      designInfosProps: [
-        {
-          styles: css`
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 0.5rem;
-          `,
-          smallHeadingProps: {
-            text: "Strategy",
-          },
-          contentHeadingProps: {
-            tagName: "h3",
-            children: "Fullstack enterprise media management",
-            styles: css`
-              font-size: 1.5rem;
-            `,
-          },
-          descriptionProps: {
-            text: "Regulatory compliance, data security, and data privacy are the foundation of our platform. We are committed to providing a secure and compliant platform that you can trust.",
-            styles: css``,
-          },
-          id: 0,
-        },
-        {
-          styles: css`
-            flex: 1;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 0.5rem;
-          `,
-          smallHeadingProps: {
-            text: "Design",
-          },
-          contentHeadingProps: {
-            tagName: "h3",
-            children: "UX/UI Design & Website & App design",
-            styles: css`
-              font-size: 1.5rem;
-            `,
-          },
-          descriptionProps: {
-            text: "higher spacing and movements through an impactful visual hierarchy. We create a design that is not only visually appealing but also functional and user-friendly.",
-            styles: css``,
-          },
-          id: 1,
-        },
-        {
-          styles: css`
-            flex: 1;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 0.5rem;
-          `,
-          smallHeadingProps: {
-            text: "Marketing",
-          },
-          contentHeadingProps: {
-            tagName: "h3",
-            children: "Marketing campaigns & Content creation",
-            styles: css`
-              font-size: 1.5rem;
-            `,
-          },
-          descriptionProps: {
-            text: "Making a short time marketing campaign and content creation for your business.",
-            styles: css``,
-          },
-          id: 2,
-        },
-        {
-          styles: css`
-            flex: 1;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 0.5rem;
-          `,
-          smallHeadingProps: {
-            text: "Campaigns",
-          },
-          contentHeadingProps: {
-            tagName: "h3",
-            children: "Google analytics & measurement",
-            styles: css`
-              font-size: 1.5rem;
-            `,
-          },
-          descriptionProps: {
-            text: "Spaces of each debt in the digital world can help you with overall simplest authentic.",
-            styles: css``,
-          },
-          id: 3,
-        },
-      ],
-      styles: css`
-        display: flex;
-        gap: 1rem;
-        justify-content: space-between;
-        /* flex-wrap: wrap; */
-        @media screen and (max-width: 820px) {
-          flex-wrap: wrap;
-        }
-      `,
-    },
-    styles: css``,
-  },
-  second: {
     designInfoGroupProps: {
       designInfosProps: [
         {
@@ -327,7 +332,7 @@ export const servicesDesignInfoWrappers: Record<
             flex-direction: column;
             align-items: center;
             gap: 0.3rem;
-            margin-top: 2rem;
+            /* margin-top: 2rem; */
             @media screen and (max-width: 820px) {
               margin: 0;
             }
@@ -379,43 +384,21 @@ export const servicesDesignInfoWrappers: Record<
             styles: css``,
           },
           styles: css`
-            margin-top: 2rem;
+            /* margin-top: 2rem; */
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 0.3rem;
-            @media screen and (max-width: 820px) {
-              margin: 0;
+            grid-column: span 2;
+            @media screen and (max-width: 400px) {
+              grid-column: 1;
             }
           `,
         },
-        {
-          id: 3,
-          img: {
-            src: brandDesign,
-            alt: "Brand Design",
-          },
-          // smallHeadingProps: {
-          //   text: "Brand Design",
-          // },
-          contentHeadingProps: {
-            tagName: "h3",
-            to: "/",
-            children: "Brand Design",
-            styles: css``,
-          },
-          descriptionProps: {
-            text: "Our Creative team made great and beautiful brands.",
-            styles: css``,
-          },
-          styles: css`
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.3rem;
-          `,
-        },
       ],
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        secondDesignInfoWrapperFlexDirection
+      ),
       styles: css`
         text-align: center;
         flex: 1;
@@ -436,6 +419,9 @@ export const servicesDesignInfoWrappers: Record<
           font-size: 2rem;
         `,
       },
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        secondDesignInfoWrapperFlexDirection
+      ),
       styles: css`
         flex-basis: 50%;
         text-align: left;
@@ -447,6 +433,7 @@ export const servicesDesignInfoWrappers: Record<
         }
       `,
     },
+    flexDirection: secondDesignInfoWrapperFlexDirection,
     styles: css`
       display: flex;
       align-items: center;

@@ -40,7 +40,7 @@ export const accordions: AccordionProps[] = [
   {
     heading: "What about hosting?",
     description:
-      "Our plan is for you to be stress-free! So, we take care of the domains and the hosting! Isn't it lovely? And also, they cannot subscribe to the blog, can they? That is also server sided. If you cant figure it out to make it happen, delete the subscription as well",
+      "Our plan is for you to be stress-free! So, we take care of the domains and the hosting! Isn't it lovely?",
     id: 7,
   },
   {

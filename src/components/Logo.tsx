@@ -5,12 +5,8 @@ import { useTheme } from "../context/ThemeContext";
 
 const Logo = () => {
   const { theme } = useTheme();
-  return (
-    <StyledLogo
-      src={theme.isDarkMode ? darkModeLogo : lightModeLogo}
-      alt="Logo"
-    />
-  );
+  const logoSrc = theme.isDarkMode ? darkModeLogo : lightModeLogo;
+  return <StyledLogo className="logo" src={logoSrc} alt="Logo" />;
 };
 
 export default Logo;

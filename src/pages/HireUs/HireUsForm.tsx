@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { StyledHireUsForm } from "../../styles/HireUs/HireUsForm.styled";
+import { StyledHireUsForm } from "../../styles/pages/HireUs/HireUsForm.styled";
 import HireUsFormContent from "./HireUsFormContent";
 import { HireUsFormProps } from "./props";
 import useCreateDoc from "../../hooks/useCreateDoc";

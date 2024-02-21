@@ -6,7 +6,7 @@ import Reveal from "./Animation/Reveal";
 const Heading: React.FC<HeadingProps> = ({ text, styles }) => {
   return (
     <Reveal withSlide>
-      <StyledHeading $styles={styles}>{text}</StyledHeading>
+      <StyledHeading className="heading" $styles={styles}>{text}</StyledHeading>
     </Reveal>
   );
 };

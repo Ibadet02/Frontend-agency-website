@@ -11,7 +11,7 @@ const ActionLink: React.FC<ActionLinkProps> = ({
 }) => {
   return (
     <Reveal>
-      <StyledActionLink to={path!} $styles={styles}>
+      <StyledActionLink className="actionLink" to={path!} $styles={styles}>
         <span className="title">{title}</span>
         {icon && <span className="icon">{icon}</span>}
       </StyledActionLink>

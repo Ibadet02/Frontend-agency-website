@@ -1,12 +1,14 @@
 import React from "react";
-import { StyledPriceGroup } from "../../styles/Pricing/PriceGroup.styled";
-import PriceGroupContent from "./PriceGroupContent";
+import { StyledPriceGroup } from "../../styles/pages/Pricing/PriceGroup.styled";
 import { PriceGroupProps } from "./props";
+import Price from "./Price";
 
-const PriceGroup: React.FC<PriceGroupProps> = (priceGroupContentProps) => {
+const PriceGroup: React.FC<PriceGroupProps> = ({ pricesProps }) => {
   return (
     <StyledPriceGroup>
-      <PriceGroupContent {...priceGroupContentProps} />
+      {pricesProps.map((priceProps) => {
+        return <Price key={priceProps.id} {...priceProps} />;
+      })}
     </StyledPriceGroup>
   );
 };

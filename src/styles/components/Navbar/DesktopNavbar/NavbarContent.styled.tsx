@@ -14,7 +14,7 @@ export const StyledNavbarContent = styled.div<{ theme: Theme }>`
     a {
       @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
       font-family: 'Josefin Sans', sans-serif;
-      font-weight: 400;
+      font-weight: 600;
       text-decoration: none;
       color: ${({ theme }) => theme.colors().mainLink()};
       transition: color ${({ theme }) => theme.transitions.changeMode};

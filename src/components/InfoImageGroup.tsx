@@ -5,7 +5,7 @@ import InfoImage from "./InfoImage";
 
 const InfoImageGroup: React.FC<InfoImageGroupProps> = ({styles, infoImagesProps}) => {
   return (
-    <StyledInfoImageGroup $styles={styles}>
+    <StyledInfoImageGroup className="indoImageGroup" $styles={styles}>
       {infoImagesProps.map((infoImageProps) => {
         return <InfoImage key={infoImageProps.id} {...infoImageProps} />;
       })}

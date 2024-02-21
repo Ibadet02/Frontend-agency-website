@@ -1,10 +1,10 @@
 import { css } from "styled-components";
 import backEndDev from "../assets/images/backend-dev.jpg";
+import ibadet from "../assets/images/ibadet.jpg";
 import ourTeam from "../assets/images/our-team.png";
 import webDesign from "../assets/images/web-design.png";
 import appDesign from "../assets/images/app-design.png";
 import uiUxDesign from "../assets/images/ui-ux-design.png";
-import brandDesign from "../assets/images/brand-design.png";
 import lamp from "../assets/images/lamp.png";
 import { PortfolioProps } from "../pages/Home/props";
 import typoDesign from "../assets/images/typo-design.png";
@@ -18,7 +18,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleRight } from "@fortawesome/free-regular-svg-icons";
 import { BannerProps } from "../components/Banner/props";
 import { DesignInfoWrapperProps } from "../components/props";
+import { designİnfo_imageDemonstrator_flexBasis } from "./utils/generateData";
 const infoImageSize = "100%";
+
+const firstBannerFlexDirection = "column";
+const secondBannerFlexDirection = "row";
+const thirdBannerFlexDirection = "column";
 export const homeBanners: Record<string, BannerProps> = {
   first: {
     styles: css`
@@ -56,6 +61,9 @@ export const homeBanners: Record<string, BannerProps> = {
         path: "/hire-us",
         icon: <FontAwesomeIcon icon={faCircleRight} />,
       },
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        firstBannerFlexDirection
+      ),
     },
     imageDemonstratorProps: {
       imagesProps: [
@@ -70,8 +78,8 @@ export const homeBanners: Record<string, BannerProps> = {
           `,
         },
         {
-          src: backEndDev,
-          alt: "BackEnd Developer",
+          src: ibadet,
+          alt: "Frontend Developer",
           id: 1,
           className: "img-2",
           isCircle: false,
@@ -91,6 +99,9 @@ export const homeBanners: Record<string, BannerProps> = {
         //   `,
         // },
       ],
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        firstBannerFlexDirection
+      ),
       styles: css`
         display: flex;
         justify-content: center;
@@ -101,6 +112,7 @@ export const homeBanners: Record<string, BannerProps> = {
         }
       `,
     },
+    flexDirection: firstBannerFlexDirection,
   },
   second: {
     styles: css`
@@ -122,10 +134,6 @@ export const homeBanners: Record<string, BannerProps> = {
           text-align: center;
         }
       `,
-      // img: {
-      //   src: ourTeam,
-      //   alt: "Our Team",
-      // },
       smallHeadingProps: {
         text: "Not some ordinary developers!",
       },
@@ -138,16 +146,18 @@ export const homeBanners: Record<string, BannerProps> = {
       },
       descriptionProps: {
         styles: css``,
-        text: 'Our mission is to become your long-term partners. We want to build a genuine relationship with our clients. "Alone, we can do so little; together, we can do so much."- Helen Keller',
+        text: 'Our mission is to become your long-term partners. We want to build a genuine relationship with our clients. "Alone, we can do so little - together, we can do so much."- Helen Keller',
       },
       actionLinkProps: {
         title: "Let's have a meeting!",
         path: "/hire-us",
       },
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        secondBannerFlexDirection
+      ),
     },
     imageDemonstratorProps: {
       styles: css`
-        flex: 1;
         display: grid;
         grid-template-columns: repeat(
           2,
@@ -175,7 +185,7 @@ export const homeBanners: Record<string, BannerProps> = {
       `,
       imagesProps: [
         {
-          src: backEndDev,
+          src: ibadet,
           alt: "Frontend Developer",
           id: 0,
           className: "image-1",
@@ -183,20 +193,8 @@ export const homeBanners: Record<string, BannerProps> = {
           styles: css`
             grid-column: 2; /* Starts at column 2 */
             grid-row: 1; /* Starts at row 1 */
-            width: 20rem;
           `,
         },
-        // {
-        //   src: backEndDev,
-        //   alt: "BackEnd Developer",
-        //   id: 1,
-        //   className: "image-2",
-        //   isCircle: true,
-        //   styles: css`
-        //     grid-column: 2; /* Starts at column 2 */
-        //     grid-row: 2; /* Starts at row 2 */
-        //   `,
-        // },
         {
           src: backEndDev,
           alt: "FullStack Developer",
@@ -208,11 +206,14 @@ export const homeBanners: Record<string, BannerProps> = {
             grid-row: 2; /* Spans 2 rows */
             /* justify-self: right; Horizontally center the item within its grid cell */
             /* place-self: center stretch; */
-            width: 20rem;
           `,
         },
       ],
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        secondBannerFlexDirection
+      ),
     },
+    flexDirection: secondBannerFlexDirection,
   },
   third: {
     styles: css`
@@ -242,6 +243,9 @@ export const homeBanners: Record<string, BannerProps> = {
         tagName: "h1",
         children: "Meet with our awesome team",
       },
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        thirdBannerFlexDirection
+      ),
     },
     imageDemonstratorProps: {
       styles: css`
@@ -260,7 +264,7 @@ export const homeBanners: Record<string, BannerProps> = {
           grid-template-columns: 1fr;
         }
         @media screen and (max-width: 440px) {
-          figure{
+          figure {
             width: 100%;
           }
         }
@@ -276,11 +280,11 @@ export const homeBanners: Record<string, BannerProps> = {
               margin-top: 1rem;
             `,
             headingProps: {
-              text: "David Snow",
+              text: "Robert",
               styles: css``,
             },
             descriptionProps: {
-              text: "Sr. UI/UX Designer",
+              text: "CEO & Founder",
               styles: css``,
             },
           },
@@ -290,8 +294,8 @@ export const homeBanners: Record<string, BannerProps> = {
           `,
         },
         {
-          src: backEndDev,
-          alt: "BackEnd Developer",
+          src: ibadet,
+          alt: "Frontend Developer",
           id: 1,
           className: "image-2",
           imageCaptionProps: {
@@ -299,11 +303,11 @@ export const homeBanners: Record<string, BannerProps> = {
               margin-top: 1rem;
             `,
             headingProps: {
-              text: "James Din",
+              text: "Ibadet Ismayilov",
               styles: css``,
             },
             descriptionProps: {
-              text: "Sr. Frontend Developer",
+              text: "Frontend Developer",
               styles: css``,
             },
           },
@@ -359,9 +363,16 @@ export const homeBanners: Record<string, BannerProps> = {
         //   `,
         // },
       ],
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        thirdBannerFlexDirection
+      ),
     },
+    flexDirection: thirdBannerFlexDirection,
   },
 };
+
+const firstDesignInfoWrapperFlexDirection = "row";
+const secondDesignInfoWrapperFlexDirection = "column";
 export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
   first: {
     designInfoGroupProps: {
@@ -390,7 +401,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
             flex-direction: column;
             align-items: center;
             gap: 0.3rem;
-            margin-top: 2rem;
+            /* margin-top: 2rem; */
             @media screen and (max-width: 820px) {
               margin: 0;
             }
@@ -442,43 +453,21 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
             styles: css``,
           },
           styles: css`
-            margin-top: 2rem;
+            /* margin-top: 2rem; */
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 0.3rem;
-            @media screen and (max-width: 820px) {
-              margin: 0;
+            grid-column: span 2;
+            @media screen and (max-width: 400px) {
+              grid-column: 1;
             }
           `,
         },
-        {
-          id: 3,
-          img: {
-            src: brandDesign,
-            alt: "Brand Design",
-          },
-          // smallHeadingProps: {
-          //   text: "Brand Design",
-          // },
-          contentHeadingProps: {
-            tagName: "h3",
-            to: "/",
-            children: "Brand Design",
-            styles: css``,
-          },
-          descriptionProps: {
-            text: "Our Creative team made great and beautiful brands.",
-            styles: css``,
-          },
-          styles: css`
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.3rem;
-          `,
-        },
       ],
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        firstDesignInfoWrapperFlexDirection
+      ),
       styles: css`
         text-align: center;
         flex: 1;
@@ -499,6 +488,9 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
           font-size: 2rem;
         `,
       },
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        firstDesignInfoWrapperFlexDirection
+      ),
       styles: css`
         flex-basis: 50%;
         text-align: left;
@@ -510,6 +502,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
         }
       `,
     },
+    flexDirection: firstDesignInfoWrapperFlexDirection,
     styles: css`
       display: flex;
       align-items: center;
@@ -558,6 +551,9 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
         title: "Know more",
         path: "/hire-us",
       },
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        secondDesignInfoWrapperFlexDirection
+      ),
     },
     designInfoGroupProps: {
       styles: css`
@@ -631,7 +627,11 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
           },
         },
       ],
+      flexBasis: designİnfo_imageDemonstrator_flexBasis(
+        secondDesignInfoWrapperFlexDirection
+      ),
     },
+    flexDirection: secondDesignInfoWrapperFlexDirection,
   },
 };
 export const portfolio: PortfolioProps = {

@@ -7,7 +7,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const Task: React.FC<TaskProps> = ({ contentHeadingProps }) => {
   return (
-    <StyledTask>
+    <StyledTask className="task">
       <div className="icon-wrapper">
         <FontAwesomeIcon icon={faCheck} />
       </div>

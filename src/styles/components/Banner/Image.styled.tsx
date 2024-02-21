@@ -16,8 +16,9 @@ export const StyledImage = styled.figure<{
   $isCircle: boolean;
   $styles?: RuleSet<object>;
 }>`
-  width: 25rem;
+  /* width: 25rem; */
   height: ${({ $isCircle }) => $isCircle && "25rem"};
+  width: ${({ $isCircle }) => $isCircle && "25rem"};
   .image {
     /* aspect-ratio: ${(props) => (props.$isCircle ? "1/1" : "4/5.5")}; */
     width: 100%;

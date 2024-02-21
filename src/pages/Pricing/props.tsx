@@ -37,8 +37,6 @@ export interface PriceProps {
   actionLinkProps: ActionLinkProps;
   id: number;
 }
-export interface PriceGroupContentProps {
+export interface PriceGroupProps {
   pricesProps: PriceProps[];
 }
-
-export type PriceGroupProps = PriceGroupContentProps;

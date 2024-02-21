@@ -1,20 +1,24 @@
-import { StyledWhatWeDo } from "../../styles/What-we-do/index.styled";
-import Banner from "../../components/Banner";
+import Banner from "../../components/Banner/index";
 import {
   whatWeDoBanners,
   whatWeDoDesignInfoWrappers,
 } from "../../data/WhatWeDo";
 import DesignInfoWrapper from "../../components/DesignInfoWrapper";
+import { StyledPage } from "../../styles/pages/index.styled";
+import { StyledSection } from "../../styles/pages/Section.styled";
 
 const { first: firstBannerProps } = whatWeDoBanners;
-const { second: secondDesignInfoWrappers } =
-  whatWeDoDesignInfoWrappers;
+const { second: secondDesignInfoWrapperProps } = whatWeDoDesignInfoWrappers;
 const WhatWeDo = () => {
   return (
-    <StyledWhatWeDo>
-      <Banner {...firstBannerProps} />
-      <DesignInfoWrapper {...secondDesignInfoWrappers} />
-    </StyledWhatWeDo>
+    <StyledPage>
+      <StyledSection>
+        <Banner {...firstBannerProps} />
+      </StyledSection>
+      <StyledSection>
+        <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
+      </StyledSection>
+    </StyledPage>
   );
 };
 

@@ -6,5 +6,3 @@ export interface PortfolioProps {
   infoImageGroupProps: InfoImageGroupProps;
   styles?: RuleSet<object>;
 }
-
-export type PortfolioContentProps = PortfolioProps;

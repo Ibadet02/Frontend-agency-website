@@ -33,7 +33,7 @@ const ContentHeading: React.FC<ContentHeadingProps> = ({
     );
   };
   return (
-    <StyledContentHeading $mutualStyles={styles}>
+    <StyledContentHeading className="contentHeading" $mutualStyles={styles}>
       <Reveal withSlide>{renderComponent()}</Reveal>
     </StyledContentHeading>
   );

@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { StyledHireUsFormContent } from "../../styles/HireUs/HireUsFormContent.styled";
+import { StyledHireUsFormContent } from "../../styles/pages/HireUs/HireUsFormContent.styled";
 import InputFamily from "./InputFamily";
 import TextInputLabel from "./TextInputLabel";
 import { HireUsFormContentProps } from "./props";

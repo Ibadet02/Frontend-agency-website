@@ -18,7 +18,6 @@ function App() {
     <>
       <Navbar />
       <SmoothScroll>
-        {/* <ScrollToTop /> */}
         <GlobalStyle theme={theme} />
         <Routes>
           <Route path="/" element={<Home />} />

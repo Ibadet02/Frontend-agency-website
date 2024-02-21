@@ -1,14 +1,19 @@
 import React from "react";
 import { StyledDesignInfoWrapper } from "../styles/components/DesignInfoWrapper.styled";
-import DesignInfoWrapperContent from "./DesignInfoWrapperContent";
+import DesignInfo from "./DesignInfo";
+import DesignInfoGroup from "./DesignInfoGroup";
 import { DesignInfoWrapperProps } from "./props";
 
-const DesignInfoWrapper: React.FC<DesignInfoWrapperProps> = (
-  designInfoWrapperContentProps
-) => {
+const DesignInfoWrapper: React.FC<DesignInfoWrapperProps> = ({
+  designInfoProps,
+  designInfoGroupProps,
+  flexDirection,
+  styles,
+}) => {
   return (
-    <StyledDesignInfoWrapper>
-      <DesignInfoWrapperContent {...designInfoWrapperContentProps} />
+    <StyledDesignInfoWrapper className="designInfoWrapper" $styles={styles} $flexDirection={flexDirection}>
+      {designInfoProps && <DesignInfo {...designInfoProps} />}
+      {designInfoGroupProps && <DesignInfoGroup {...designInfoGroupProps} />}
     </StyledDesignInfoWrapper>
   );
 };

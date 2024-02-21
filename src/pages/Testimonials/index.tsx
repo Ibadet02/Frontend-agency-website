@@ -1,13 +1,13 @@
-import { StyledTestimonials } from "../../styles/Testimonials/index.styled";
-// import Feedbacks from '../../components/Feedbacks'
-// import { feedbacks as feedbacksProps } from "../../data/components/Feedbacks";
-import Construction from "../../components/Construction";
+import Construction from "../../components/Construction/index";
+import { StyledSection } from "../../styles/pages/Section.styled";
+import { StyledPage } from "../../styles/pages/index.styled";
 const Testimonials = () => {
   return (
-    <StyledTestimonials>
-      {/* <Feedbacks {...feedbacksProps} /> */}
-      <Construction text="Hoo-ah! Our website took a wrong turn at the digital intersection... Don't worry! We're rerouting it back on track" />
-    </StyledTestimonials>
+    <StyledPage>
+      <StyledSection>
+        <Construction text="Hoo-ah! Our website took a wrong turn at the digital intersection... Don't worry! We're rerouting it back on track" />
+      </StyledSection>
+    </StyledPage>
   );
 };
 

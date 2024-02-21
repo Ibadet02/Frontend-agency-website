@@ -1,23 +1,32 @@
-import { StyledServices } from "../../styles/Services/index.styled";
 import { servicesBanners } from "../../data/Services";
-import Banner from "../../components/Banner";
+import Banner from "../../components/Banner/index";
 import DesignInfoWrapper from "../../components/DesignInfoWrapper";
 import { servicesDesignInfoWrappers } from "../../data/Services";
 import { whatWeDoDesignInfoWrappers } from "../../data/WhatWeDo";
+import { StyledPage } from "../../styles/pages/index.styled";
+import { StyledSection } from "../../styles/pages/Section.styled";
 
-const { first: firstDesignInfoWrapperProps, second: secondDesignInfoWrapperProps } = servicesDesignInfoWrappers;
-
+const { first: firstDesignInfoWrapperProps } = servicesDesignInfoWrappers;
 const { first: firstBannerProps } = servicesBanners;
-const { second: thirdDesignInfoWrapperProps } = whatWeDoDesignInfoWrappers;
+const { second: secondDesignInfoWrapperProps } = whatWeDoDesignInfoWrappers;
 const Services = () => {
   return (
-    <StyledServices>
-      <Banner {...firstBannerProps} />
-      <DesignInfoWrapper {...firstDesignInfoWrapperProps} />
-      <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
-      <DesignInfoWrapper {...thirdDesignInfoWrapperProps} />
-      {/* <Feedbacks {...feedbacksProps} /> */}
-    </StyledServices>
+    <StyledPage>
+      <StyledSection>
+        <Banner {...firstBannerProps} />
+      </StyledSection>
+      {/* <StyledSection>
+        <StyledContent>
+          <DesignInfoGroup {...firstDesignInfoGroupProps} />
+        </StyledContent>
+      </StyledSection> */}
+      <StyledSection>
+        <DesignInfoWrapper {...firstDesignInfoWrapperProps} />
+      </StyledSection>
+      <StyledSection>
+        <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
+      </StyledSection>
+    </StyledPage>
   );
 };
 
