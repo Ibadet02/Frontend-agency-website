@@ -44,7 +44,7 @@ const About = () => {
             </Reveal>
             <MainDescription
               text="Hi there! My name is Ibadet and I am the Al Pacino of web development, armed with over three years of intense code battles. Every line is coded with such grace, just like Al Pacino delivers his iconic lines on the silver screen. Much like Al Pacino’s iconic plays, I bring passion, intensity, and a dash of unpredictability to the digital masterpiece. 
-I hope you will have a great time on our website! Oh, and Robert was right! Stay awesome!"
+              I hope you will have a great time on our website! Oh, and Robert was right! Stay awesome!"
             />
           </div>
         </StyledInformationContent>
