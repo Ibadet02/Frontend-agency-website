@@ -28,7 +28,7 @@ export const accordions: AccordionProps[] = [
   {
     heading: "Why are you so expensive?",
     description:
-      "Uh... so you are that kind of person, huh? Just kidding! Okay, let's be serious! For some people, this might sound expensive. And we understand. However, this price is actually at the lower end of prices. There are many things that need to be taken care of, and that justifies the price.",
+      "To some people, this might sound expensive, and we understand. At this price, you will have the domain, the hosting, maintenance and constant support.",
     id: 5,
   },
   {

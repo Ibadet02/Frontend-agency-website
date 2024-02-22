@@ -444,7 +444,7 @@ export const whatWeDoDesignInfoWrappers: Record<
             styles: css`
               grid-column: 2;
             `,
-            text: "Our mission is to make you succeed. We mean that.",
+            text: "Our mission is to make you succeed.",
           },
           styles: css`
             display: grid;

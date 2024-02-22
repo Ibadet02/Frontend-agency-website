@@ -31,7 +31,7 @@ const About = () => {
               If you want to picture me, I will help you: A passionate individual to creates meaningful relationships with people and fosters a great community with people who share the same passion and excitement as me. Yep, that’s me in a nutshell. 
               So, as you navigate through our virtual home, I invite you to join us on this crazy adventure of discovery, connection and passion. 
               Oh, I almost forgot! I am not alone in this crazy journey, check the guy to my right! He’s a handsome fella! 
-              Cheers, mate!"
+              Cheers, mate! Check the guy next to me"
             />
           </div>
           <div className="info-frame">
