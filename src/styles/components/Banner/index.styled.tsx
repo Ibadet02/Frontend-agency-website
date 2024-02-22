@@ -3,7 +3,7 @@ import { Theme } from "../../../theme";
 
 export const StyledBanner = styled.div<{
   $styles?: RuleSet<object>;
-  $flexDirection: string;
+  $flexDirection?: string;
   theme: Theme;
 }>`
   flex-direction: ${({ $flexDirection }) => $flexDirection};

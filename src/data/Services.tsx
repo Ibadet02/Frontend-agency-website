@@ -15,20 +15,21 @@ const firstBannerFlexDirection = "row";
 export const servicesBanners: Record<string, BannerProps> = {
   first: {
     styles: css`
-      @media screen and (max-width: 1170px) {
+      align-items: center;
+      gap: 2rem;
+      @media screen and (max-width: 1215px) {
         flex-direction: column;
-        text-align: center;
       }
     `,
     designInfoProps: {
       styles: css`
         display: flex;
-        flex: 1;
+        flex-basis: 50%;
         flex-direction: column;
         justify-content: center;
-        @media screen and (max-width: 1170px) {
-          flex-direction: column;
+        @media screen and (max-width: 1215px) {
           align-items: center;
+          text-align: center;
         }
       `,
       smallHeadingProps: {
@@ -57,6 +58,35 @@ export const servicesBanners: Record<string, BannerProps> = {
       // flexBasis: "auto",
     },
     imageDemonstratorProps: {
+      styles: css`
+        display: flex;
+        align-items: center;
+        height: 100%;
+        /* display: grid; */
+        /* grid-template-columns: repeat(
+          2,
+          1fr
+        ); Two columns with equal width */
+        /* grid-template-rows: repeat(
+          2,
+          auto
+        ); Two rows with automatic height */
+        gap: 1rem;
+        @media screen and (max-width: 700px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          figure {
+            /* width: 100%; */
+            /* padding-inline: 3rem; */
+            .image {
+              /* border-radius: 40%; */
+              /* aspect-ratio: 4/5.5; */
+            }
+          }
+        }
+      `,
       imagesProps: [
         {
           src: backEndDev,
@@ -87,10 +117,15 @@ export const servicesBanners: Record<string, BannerProps> = {
             },
           },
           styles: css`
-            grid-column: 1;
-            grid-row: 1; /* Spans 2 rows */
+            /* grid-column: 2;
+            grid-row: 1; */
             position: relative;
-            align-self: stretch;
+            align-self: flex-start;
+            img {
+              width: auto;
+              height: 10.5rem;
+              object-fit: cover;
+            }
           `,
         },
         {
@@ -122,38 +157,21 @@ export const servicesBanners: Record<string, BannerProps> = {
             },
           },
           styles: css`
-            grid-column: 2;
-            /* align-self: center; */
-            grid-row: 2; /* Spans 2 rows */
-            /* justify-self: center; Horizontally center the item within its grid cell */
-            /* place-self: center stretch; */
+            /* grid-column: 1;
+            grid-row: 2; */
             position: relative;
-            align-self: stretch;
+            align-self: flex-end;
+            img {
+              width: auto;
+              height: 10.5rem;
+              object-fit: cover;
+            }
           `,
         },
       ],
       flexBasis: designİnfo_imageDemonstrator_flexBasis(
         firstBannerFlexDirection
       ),
-      styles: css`
-        grid-auto-rows: auto;
-        grid-auto-columns: auto;
-        /* grid-template-columns: 1fr 1fr; */
-        display: grid;
-        gap: 2rem;
-        @media screen and (max-width: 1170px) {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          figure {
-            .image {
-              /* aspect-ratio: 4/5.5;
-              border-radius: 40%; */
-            }
-          }
-        }
-      `,
     },
     flexDirection: firstBannerFlexDirection,
   },

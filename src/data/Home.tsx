@@ -22,7 +22,7 @@ import { designİnfo_imageDemonstrator_flexBasis } from "./utils/generateData";
 const infoImageSize = "100%";
 
 const firstBannerFlexDirection = "column";
-const secondBannerFlexDirection = "row";
+const secondBannerFlexDirection = "row-reverse";
 const thirdBannerFlexDirection = "column";
 export const homeBanners: Record<string, BannerProps> = {
   first: {
@@ -60,9 +60,9 @@ export const homeBanners: Record<string, BannerProps> = {
         path: "/hire-us",
         icon: <FontAwesomeIcon icon={faCircleRight} />,
       },
-      flexBasis: designİnfo_imageDemonstrator_flexBasis(
-        firstBannerFlexDirection
-      ),
+      // flexBasis: designİnfo_imageDemonstrator_flexBasis(
+      //   firstBannerFlexDirection
+      // ),
     },
     imageDemonstratorProps: {
       imagesProps: [
@@ -73,9 +73,10 @@ export const homeBanners: Record<string, BannerProps> = {
           className: "img-1",
           isCircle: false,
           styles: css`
-            flex-basis: 50%;
+            /* flex-basis: 50%; */
             img {
-              height: 100%;
+              width: auto;
+              height: 16rem;
               object-fit: cover;
             }
           `,
@@ -90,22 +91,24 @@ export const homeBanners: Record<string, BannerProps> = {
             /* width: 15rem; */
             /* margin-top: 2rem; */
             transform: translateY(2rem);
-            flex-basis: 50%;
+            /* flex-basis: 50%; */
             img {
-              height: 100%;
+              width: auto;
+              height: 16rem;
               object-fit: cover;
             }
           `,
         },
       ],
-      flexBasis: designİnfo_imageDemonstrator_flexBasis(
-        firstBannerFlexDirection
-      ),
+      // flexBasis: designİnfo_imageDemonstrator_flexBasis(
+      //   firstBannerFlexDirection
+      // ),
       styles: css`
         display: flex;
         justify-content: center;
         gap: 1rem;
-        height: 100%;
+        width: 100%;
+        /* height: 100%; */
         @media screen and (max-width: 850px) {
           display: none;
         }
@@ -115,7 +118,6 @@ export const homeBanners: Record<string, BannerProps> = {
   },
   second: {
     styles: css`
-      flex-direction: row-reverse;
       align-items: center;
       gap: 2rem;
       @media screen and (max-width: 1215px) {
@@ -157,15 +159,18 @@ export const homeBanners: Record<string, BannerProps> = {
     },
     imageDemonstratorProps: {
       styles: css`
-        display: grid;
-        grid-template-columns: repeat(
+        display: flex;
+        align-items: center;
+        height: 100%;
+        /* display: grid; */
+        /* grid-template-columns: repeat(
           2,
           1fr
-        ); /* Two columns with equal width */
-        grid-template-rows: repeat(
+        ); Two columns with equal width */
+        /* grid-template-rows: repeat(
           2,
           auto
-        ); /* Two rows with automatic height */
+        ); Two rows with automatic height */
         gap: 1rem;
         @media screen and (max-width: 700px) {
           display: flex;
@@ -182,7 +187,6 @@ export const homeBanners: Record<string, BannerProps> = {
           }
         }
       `,
-      // fixed it y
       imagesProps: [
         {
           src: ibadet,
@@ -191,8 +195,14 @@ export const homeBanners: Record<string, BannerProps> = {
           className: "image-1",
           isCircle: false,
           styles: css`
-            grid-column: 2; /* Starts at column 2 */
-            grid-row: 1; /* Starts at row 1 */
+            /* grid-column: 2;
+            grid-row: 1; */
+            align-self: flex-start;
+            img {
+              width: auto;
+              height: 8.5rem;
+              object-fit: cover;
+            }
           `,
         },
         {
@@ -202,10 +212,14 @@ export const homeBanners: Record<string, BannerProps> = {
           className: "image-3",
           isCircle: false,
           styles: css`
-            grid-column: 1; /* Starts at column 1 */
-            grid-row: 2; /* Spans 2 rows */
-            /* justify-self: right; Horizontally center the item within its grid cell */
-            /* place-self: center stretch; */
+            /* grid-column: 1;
+            grid-row: 2; */
+            align-self: flex-end;
+            img {
+              width: auto;
+              height: 8.5rem;
+              object-fit: cover;
+            }
           `,
         },
       ],
@@ -225,7 +239,6 @@ export const homeBanners: Record<string, BannerProps> = {
     designInfoProps: {
       styles: css`
         width: 25rem;
-        height: 16rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -255,19 +268,8 @@ export const homeBanners: Record<string, BannerProps> = {
         display: flex;
         justify-content: center;
         gap: 1rem;
-        /* flex-wrap: wrap; */
-        @media screen and (max-width: 850px) {
-          grid-template-columns: 1fr;
-        }
-        @media screen and (max-width: 820px) {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          justify-items: center;
-        }
-        @media screen and (max-width: 440px) {
-          figure {
-            width: 100%;
-          }
+        @media screen and (max-width: 970px) {
+          flex-direction: column;
         }
       `,
       imagesProps: [
@@ -294,7 +296,8 @@ export const homeBanners: Record<string, BannerProps> = {
             /* flex: 1; */
             flex-basis: 50%;
             img {
-              height: 100%;
+              width: auto;
+              height: 20rem;
               object-fit: cover;
             }
           `,
@@ -322,7 +325,8 @@ export const homeBanners: Record<string, BannerProps> = {
             /* flex: 1; */
             flex-basis: 50%;
             img {
-              height: 100%;
+              width: auto;
+              height: 20rem;
               object-fit: cover;
             }
           `,
