@@ -182,7 +182,7 @@ export const homeBanners: Record<string, BannerProps> = {
           }
         }
       `,
-      // fixed it
+      // fixed it y
       imagesProps: [
         {
           src: ibadet,
