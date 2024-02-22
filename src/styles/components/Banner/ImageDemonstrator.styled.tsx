@@ -2,7 +2,7 @@ import styled, { RuleSet } from "styled-components";
 
 export const StyledImageDemonstrator = styled.div<{
   $styles?: RuleSet<object>;
-  $flexBasis: "50%" | "auto";
+  $flexBasis?: "50%" | "auto";
 }>`
   flex-basis: ${({ $flexBasis }) => $flexBasis};
   @media screen and (max-width: 400px) {
