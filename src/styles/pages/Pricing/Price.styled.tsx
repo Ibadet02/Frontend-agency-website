@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Theme } from "../../../theme";
 
-export const StyledPrice = styled.div<{theme: Theme}>`
+export const StyledPrice = styled.div<{ theme: Theme }>`
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -21,9 +21,16 @@ export const StyledPrice = styled.div<{theme: Theme}>`
       color: ${({ theme }) => theme.colors().mainBlue};
     }
   }
+  .heading {
+    transition: color ${({ theme }) => theme.transitions.changeMode};
+    color: ${({ theme }) => (theme.isDarkMode ? "#000" : theme.colors().white)};
+  }
+  .mainDescription {
+    transition: color ${({ theme }) => theme.transitions.changeMode};
+    color: ${({ theme }) => (theme.isDarkMode ? '#444547' : 'lightGray')};
+  }
   .price-duration--info {
     display: flex;
     align-items: center;
-    color: #fff;
   }
 `;

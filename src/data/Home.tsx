@@ -255,7 +255,7 @@ export const homeBanners: Record<string, BannerProps> = {
           font-size: 3rem;
         `,
         tagName: "h1",
-        children: "Meet with our awesome team",
+        children: "Meet with our team",
       },
       flexBasis: designİnfo_imageDemonstrator_flexBasis(
         thirdBannerFlexDirection
@@ -637,7 +637,7 @@ export const homeDesignInfoWrappers: Record<string, DesignInfoWrapperProps> = {
             styles: css``,
           },
           descriptionProps: {
-            text: "Our mission is to make you succeed. We mean that.",
+            text: "Our mission is to make you succeed.",
             styles: css``,
           },
         },
