@@ -17,19 +17,19 @@ const {
 const Home = () => {
   return (
     <StyledPage>
-      <StyledSection>
+      <StyledSection $height="40rem">
         <Banner {...firstBannerProps} />
       </StyledSection>
       <StyledSection>
         <DesignInfoWrapper {...firstDesignInfoWrapperProps} />
       </StyledSection>
-      <StyledSection>
+      <StyledSection $height="20rem">
         <Banner {...secondBannerProps} />
       </StyledSection>
       <StyledSection>
         <DesignInfoWrapper {...secondDesignInfoWrapperProps} />
       </StyledSection>
-      <StyledSection>
+      <StyledSection $height="40rem">
         <Banner {...thirdBannerProps} />
       </StyledSection>
     </StyledPage>

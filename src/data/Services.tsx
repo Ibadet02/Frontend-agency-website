@@ -1,7 +1,10 @@
 import { css } from "styled-components";
 import backEndDev from "../assets/images/backend-dev.jpg";
 import ibadet from "../assets/images/ibadet.jpg";
-import { DesignInfoGroupProps, DesignInfoWrapperProps } from "../components/props";
+import {
+  DesignInfoGroupProps,
+  DesignInfoWrapperProps,
+} from "../components/props";
 import { BannerProps } from "../components/Banner/props";
 import webDesign from "../assets/images/web-design.png";
 import appDesign from "../assets/images/app-design.png";
@@ -20,6 +23,7 @@ export const servicesBanners: Record<string, BannerProps> = {
     designInfoProps: {
       styles: css`
         display: flex;
+        flex: 1;
         flex-direction: column;
         justify-content: center;
         @media screen and (max-width: 1170px) {
@@ -47,9 +51,10 @@ export const servicesBanners: Record<string, BannerProps> = {
         path: "/hire-us",
         icon: "",
       },
-      flexBasis: designİnfo_imageDemonstrator_flexBasis(
-        firstBannerFlexDirection
-      ),
+      // flexBasis: designİnfo_imageDemonstrator_flexBasis(
+      //   firstBannerFlexDirection
+      // ),
+      // flexBasis: "auto",
     },
     imageDemonstratorProps: {
       imagesProps: [
@@ -83,43 +88,11 @@ export const servicesBanners: Record<string, BannerProps> = {
           },
           styles: css`
             grid-column: 1;
+            grid-row: 1; /* Spans 2 rows */
             position: relative;
+            align-self: stretch;
           `,
         },
-        // {
-        //   src: backEndDev,
-        //   alt: "BackEnd Developer",
-        //   id: 1,
-        //   className: "image-2",
-        //   isCircle: true,
-        //   imageCaptionProps: {
-        //     styles: css`
-        //       position: absolute;
-        //       width: 100%;
-        //       bottom: 0;
-        //       .caption-text {
-        //         width: 70%;
-        //         background-color: #fff;
-        //         padding: 0.6rem;
-        //         border-radius: 0.7rem;
-        //       }
-        //     `,
-        //     headingProps: {
-        //       text: "Sarah Din",
-        //       styles: css`
-        //         color: #000;
-        //       `,
-        //     },
-        //     descriptionProps: {
-        //       text: "Sr. BackEnd Developer",
-        //     },
-        //   },
-        //   styles: css`
-        //     grid-column: 1;
-        //     grid-row: 2;
-        //     position: relative;
-        //   `,
-        // },
         {
           src: ibadet,
           alt: "FullStack Developer",
@@ -155,6 +128,7 @@ export const servicesBanners: Record<string, BannerProps> = {
             /* justify-self: center; Horizontally center the item within its grid cell */
             /* place-self: center stretch; */
             position: relative;
+            align-self: stretch;
           `,
         },
       ],
@@ -162,6 +136,9 @@ export const servicesBanners: Record<string, BannerProps> = {
         firstBannerFlexDirection
       ),
       styles: css`
+        grid-auto-rows: auto;
+        grid-auto-columns: auto;
+        /* grid-template-columns: 1fr 1fr; */
         display: grid;
         gap: 2rem;
         @media screen and (max-width: 1170px) {
@@ -288,7 +265,7 @@ export const servicesDesignInfoGroups: Record<string, DesignInfoGroupProps> = {
         id: 3,
       },
     ],
-    flexBasis: 'auto',
+    flexBasis: "auto",
     styles: css`
       display: flex;
       gap: 1rem;
@@ -298,8 +275,8 @@ export const servicesDesignInfoGroups: Record<string, DesignInfoGroupProps> = {
         flex-wrap: wrap;
       }
     `,
-  }
-}
+  },
+};
 const secondDesignInfoWrapperFlexDirection = "row";
 export const servicesDesignInfoWrappers: Record<
   string,
