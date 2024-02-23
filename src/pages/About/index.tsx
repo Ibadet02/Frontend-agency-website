@@ -19,7 +19,6 @@ const About = () => {
       <StyledInformation>
         <StyledInformationContent>
           <div className="info-frame">
-            {/* <Image {...firstImageProps} /> */}
             <Reveal>
               <img src={robert} alt="" className="aboutUs-image" />
             </Reveal>
