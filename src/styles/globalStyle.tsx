@@ -40,12 +40,12 @@ export const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
         scroll-behavior: smooth;
     }
     body {
-        padding-top: calc(${({ theme }) => theme.heights.navbar} + 3rem);
+        /* padding-top: calc(${({ theme }) => theme.heights.navbar} + 3rem); */
         background-color: ${({ theme }) => theme.colors().mainBG()};
         transition: background-color ${({ theme }) =>
           theme.transitions.changeMode};
         overflow: ${({ theme }) => theme.bodyOverflow};
-        height: 100vh;
+        /* height: 100vh; */
         .container{
             
         }
