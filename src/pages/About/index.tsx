@@ -9,7 +9,7 @@ import { StyledSection } from "../../styles/pages/Section.styled";
 import DesignInfo from "../../components/DesignInfo";
 import Reveal from "../../components/Animation/Reveal";
 const { first: firstDesignInfoProps } = aboutDesignInfoProps;
-
+// main
 const About = () => {
   return (
     <StyledPage>
